@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | iKon - But You</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="k-pop/butyou.png">
+        </div>  
+    <div class="music-info">
+    <h2>But You</h2>
+    <p>Singer: iKon</p>
+    <p class="track">Track 1 - FLASHBACK</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+I'm in love again<br>
+지금 옆에 그 사람은 어때?<br>
+서로가 좋은 사람<br>
+만날 거란 말도<br>
+더 이상 내겐 의미 없네<br>
+이젠 나도<br>
+<br>
+[Pre-Chorus]<br>
+누군갈 만나서<br>
+다시 설레고<br>
+잊으려 해 봐도<br>
+허전하긴 마찬가지<br>
+미련일까 익숙해진 걸까<br>
+채워지지 않는걸<br>
+<br>
+[Chorus]<br>
+낯선 사람을 만나고<br>
+다 잊은 듯이 품에 안겨 봐도<br>
+왜 이럴까 난 왜<br>
+너라는 이유, ooh, ooh<br>
+I need you, baby<br>
+혹시나 우리가 또다시<br>
+시작한다면 사랑한다면<br>
+오로지 난 you, you-ooh<br>
+<br>
+[Verse 2]<br>
+I'm in love again<br>
+친구들은 이런 내가 철없대<br>
+아무렇지 않은 척<br>
+잘 지낸다는 말도<br>
+감정 없는 사람처럼 보인대<br>
+상관없지 뭐<br>
+Yeah, I'm in love with you<br>
+너에게 난 매일매일 돌아가<br>
+Know, you need me too<br>
+누구보다 서로를 잘 알잖아<br>
+Baby, 너와의 시간들이 계속<br>
+오버랩돼 무슨 짓을 해도<br>
+Nobody but you<br>
+I want nobody but you<br>
+<br>
+[Chorus]<br>
+낯선 사람을 만나고<br>
+다 잊은 듯이 품에 안겨 봐도<br>
+왜 이럴까 난 왜<br>
+너라는 이유, ooh, ooh<br>
+I need you, baby<br>
+혹시나 우리가 또다시<br>
+시작한다면 사랑한다면<br>
+오로지 난 you, you-ooh<br>
+<br>
+[Bridge]<br>
+시간이 갈수록<br>
+그리워진 만큼 내 눈앞에<br>
+선명하게<br>
+네 모습이 떠오르고<br>
+여전히 널 원해<br>
+어디에 있어도 내 맘속에<br>
+함께했던<br>
+*아름다운 순간들을, ooh<br>
+Don't want no one but you, you*<br>
+<br>
+[Chorus]<br>
+낯선 사람을 만나고<br>
+다 잊은 듯이 품에 안겨 봐도<br>
+왜 이럴까 난 왜<br>
+너라는 이유, ooh, ooh<br>
+I need you, baby<br>
+혹시나 우리가 또다시<br>
+시작한다면 사랑한다면<br>
+오로지 난 you, you-ooh
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/1490pooFSB7K19Z93vF1gQU7grgfnoJdE/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1uF7De56uE7Ule2g6N78KKD80oni8RRvA" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

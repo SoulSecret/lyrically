@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Cueshé - Borrowed Time</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+													<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagerock/borrwed-time.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Borrowed Time</h2>
+    <p>Singer: Cueshé</p>
+    <p class="track">Track 1 - Back to Me</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Every fight needs mending<br>
+Every start has an end<br>
+Like the sunrise and the sunset<br>
+That's just how it is<br>
+Love on borrowed time<br>
+Will never be yours nor mine<br>
+I need you like you need me<br>
+The way we ought to be<br>
+<br>
+[Chorus]<br>
+Oh, it's good to be true<br>
+If our hopes and dreams come true<br>
+Wish that I had more<br>
+Of this borrowed time<br>
+If only it would last a lifetime<br>
+<br>
+[Verse 2]<br>
+This bitterness inside<br>
+Is an empty space I hide<br>
+It never satisfies<br>
+Living my life in a lie<br>
+Love on borrowed time<br>
+Will never be yours nor mine<br>
+I'll just close my eyes<br>
+And it will be alright<br>
+<br>
+[Chorus]<br>
+Oh, it's good to be true<br>
+If our hopes and dreams come true<br>
+Wish that I had more<br>
+Of this borrowed time<br>
+If only it would last a lifetime<br>
+<br>
+[Bridge]<br>
+Now that you've gone away<br>
+You seem so close<br>
+But you're miles and miles away<br>
+<br>
+[Chorus]<br>
+Oh, it's good to be true<br>
+If our hopes and dreams come true<br>
+Wish that I had more<br>
+Of this borrowed time<br>
+If only it would last<br>
+Oh, it's good to be true<br>
+If our hopes and dreams come true<br>
+Wish that I had more<br>
+Of this borrowed time<br>
+If only it would last<br>
+<br>
+[Chorus]<br>
+Oh, it's good to be true<br>
+If our hopes and dreams come true<br>
+Wish that I had more<br>
+Of this borrowed time<br>
+If only it would last a lifetime
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/124hcoXzrHfet2dKvBK-FPuL3oNApoHFv/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+						</body>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1m_fNZEyQ_zL7QG_njKw_gPXriK7Rr1Tv" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  function audioEnded () {
+											document.getElementById("status").innerHTML="Audio End";
+											icon.src ="image/play.png"
+											}
+											mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

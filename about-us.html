@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+				<head>
+					<title>Lyrically | About Us</title>
+					<link rel="icon" href="image/loco.jpg">
+					<link rel="stylesheet" href="styless.css">
+					<meta content='width=device-width,initial-scale=1' name='viewport'>
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">  
+			 </heaad>
+			 <body>
+			 	<div class="container">
+								<div class="navi-bar">
+												<p class="logo"><span>Lyrical</span>ly</p>
+							<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+						<nav>
+												
+								<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+				</div>
+			 			<div class="about">
+			 					<h2 class="aboutus">About Us</h2>
+			 					<h4>All song lyrics, logos, trademarks, album cover art, and other 								 creative works are and remain copyright and property of their 									respective owners. Commercial use prohibited. Lyrically is 									not-for-profit. These Lyrics may only be used for educational 									purposes.
+			 							</h4>
+			 				<div class="social-media">
+      <h4>You can Message me on my Social Media</h4>
+      </div>
+      <div class="icons">
+        <a href="https://twitter.com/markjoel21?t=WMD2kctyyLUv4jKIChLbFQ&s=09" class = "fab fa-twitter fa-2x"></a>
+        <a href="https://www.facebook.com/ISalamandER06" class = "fab fa-facebook fa-2x"></a>
+        <a href="https://www.instagram.com/im.isalamander/" class = "fab fa-instagram fa-2x"></a>
+        <a href="https://t.me/SUn0G" class = "fab fa-telegram fa-2x"></a>
+      </div>
+			 			</div>
+			 	</div>			
+			 </body>			
+			 <script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+			</script>
+			<script src="search.js"></script>
+</html>

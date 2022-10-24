@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Tropical Depression - Bilog Nanaman ang Buwan</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagereggae/bilog.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Bilog Nanaman<br>ang Buwan</h2>
+    <p>Singer: Tropical Depression</p>
+    <p class="track">Track 10 - Kapayapaan </p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>Papalumi sa d**i ng dance all stylee..<br>
+Bilog na naman ang buwan<br>
+Ilabas nyo na ang kalokohan<br>
+Wag nyo ng pipigilan pa<br>
+Ang toyo nyo'y lalabas din lamang<br>
+Pag bilog na bilog na bilog na naman ang buwan<br>
+<br>
+Sa may mabalacat mayroong kapre<br>
+Tabakong sinde sinde<br>
+Sa sinag ng bilog ng buwan siya'y nabibilad<br>
+Ng naka bikini<br>
+<br>
+Bilog na naman ang buwan (buwan ng ka-bilugan ng ka-bilugan ng buwan)<br>
+Ilabas nyo na ang kalokohan (wag nyo ng pigilan baka sumakit ang tiyan)<br>
+Wag nyo ng pipigilan pa (sige na sige pa sige na)<br>
+Ang toyo nyo'y lalabas din lamang (whhyyyy)<br>
+Pag bilog na bilog na bilog na naman ang buwan<br>
+<br>
+Meron namang isang lalake maton daw siya ng e.mabini<br>
+Pero pag bilog ang buwan siya'y nag dadamit babae<br>
+Bilog na naman ang buwan (buwan ng ka-bilugan ng ka-bilugan ng buwan)<br>
+Ilabas nyo na ang kalokohan (wag nyo ng pigilan baka sumakit ang tiyan)<br>
+Wag nyo ng pipigilan pa (sige na sige pa sige na)<br>
+Ang toyo nyo'y lalabas din lamang (whhyyyy)<br>
+Pag bilog na bilog na bilog na naman ang buwan<br>
+<br>
+Ako'y ng haharana lamang umaawit na parang bolang<br>
+Ganyan ako pag bilog ang buwan lost na lost at na bubuwang<br>
+Bilog na naman ang buwan (devil laugh- muwahahahahaha)<br>
+Ilabas nyo na ang kalokohan (buwan ng ka-bilugan ng ka-bilugan ng buwan)<br>
+Wag nyo ng pipigilan pa (sige na sige pa sige na)<br>
+Ang toyo nyo'y lalabas din lamang (whhyyyy)<br>
+Pag bilog na bilog na bilog na naman ang buwan
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12U8k8PaU7uOoF-IYhROUVkfMzsWRq_O9/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1tTVlBiOnXJpwR3k7owgKGXFTxj2fARwR" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+						<script src="search.js"></script>		
+				</body>
+				
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Mountain - Baby, I love Your Way</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagereggae/mountain.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Baby, I love Your Way</h2>
+    <p>Singer: Big Mountain</p>
+    <p class="track">Track 7 - Unity</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Intro]<br>
+Ooh, baby, I love your way, every day, yeah-eeh-yeah<br>
+Ooh, baby, I love your way, every day<br>
+<br>
+[Verse 1]<br>
+Shadows grew so long before my eyes<br>
+And they're moving across the page<br>
+Suddenly the day turns into night (Ooh)<br>
+Far away from the city<br>
+<br>
+[Pre-Chorus 1]<br>
+But don't, oh no, hesitate<br>
+'Cause your love just won't wait, hey-eeh-yeah-yeah<br>
+<br>
+[Chorus 1]<br>
+Ooh, baby, I love your way, every day, yeah-eeh-yeah<br>
+I wanna tell you I love your way, every day, yeah-yeah<br>
+I wanna be with you night and day<br>
+<br>
+[Verse 2]<br>
+The moon appears to shine and light the sky<br>
+With the help of some fireflies<br>
+I wonder how they have the power to shine, shine, shine<br>
+Well, I can see them under the pine<br>
+<br>
+[Pre-Chorus 2]<br>
+But don't, woah no no, hesitate, la-di-dah<br>
+'Cause your love just won't wait<br>
+Hey-eeh-yeah-yeah!<br>
+<br>
+[Chorus 2]<br>
+Ooh, baby, I love your way, every day, yeah-eeh-yeah<br>
+I wanna tell you I love your way, every day, ey-yeah!<br>
+I wanna be with you night and day<br>
+Woah, baby, oh baby, please!<br>
+<br>
+[Saxophone solo]<br>
+Every day, yeah-eeh-yeah!<br>
+How I love, how I love ya-hah<br>
+(I love your way)<br>
+Oh, baby, please!<br>
+<br>
+[Verse 3]<br>
+I can see the sunset in your eyes<br>
+Brown and grey and blue besides<br>
+Clouds are stalking islands in the sun<br>
+I wish I could buy one out of season<br>
+But don't, oh no no, hesitate, la-di-dah!<br>
+'Cause your love just won't wait<br>
+Just won't wait<br>
+<br>
+[Chorus 3]<br>
+Ooh, baby, I love your way<br>
+Every, every day-eeh-yay!<br>
+I wanna tell you I love your way<br>
+I wanna tell you how I love your little ways<br>
+I wanna be with you night and day<br>
+Every day in every way, yeah!<br>
+<br>
+Biliabidididastopdayeday<br>
+<br>
+[Chorus repeat until fade-out]<br>
+(Ooh, baby, I love your way)<br>
+Ooh baby, how I love your little ways<br>
+(I wanna tell you I love your way)<br>
+I wanna tell you how I, I wanna tell you how I love your little ways<br>
+(I wanna be with you night and day)<br>
+Bididiabididisapidadee-yeah<br>
+<br>
+(Ooh baby, I love your way)<br>
+Ooh, baby, baby, baby
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12YPfcC0sqZ5lIWpyg9wILrrw3ci0lwMk/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1tW8zCc8n9FJi21vsGgv0G6raPBp50iSn" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

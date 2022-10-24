@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Arthur Miguel ft. Trisha Macapagal - Ang Wakas</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+												
+												
+								
+										
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagephtophits/angwakas.png" >
+        </div>  
+    <div class="music-info">
+    <h2>Ang Wakas</h2>
+    <p>Singer: Arthur Miguel<br>Ft. Trisha Macapagal</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Verse 1]<br>
+Mahirap ba'ng ipilit ang lumaban<br>
+'Pag hindi na kaya?<br>
+Saan na kukuha ng lakas?<br>
+Ibuhos man lahat-lahat<br>
+Wala pa rin itong pag-asa<br>
+Kung mag-isa kang lalaban<br>
+<br>
+[Pre-Chorus]<br>
+Sa pagtakbo ng oras<br>
+Unti-unting kumupas<br>
+Ang dating wagas<br>
+Ay magwawakas<br>
+<br>
+[Chorus]<br>
+Masisisi mo ba<br>
+Kung ayaw na talaga?<br>
+Kung ang pag-ibig mo<br>
+Tuluyang maglaho<br>
+O ba't nagbago bigla<br>
+Mga titig ay nag-iba<br>
+Ika'y lumalayo<br>
+Tadhana ba ito?<br>
+<br>
+[Verse 2]<br>
+Kapag damdamin na'ng nagsalita<br>
+Wala ka nang magagawa<br>
+Kundi sundin ito kahit ayaw<br>
+Wala na ngang natitira<br>
+Lahat-lahat naglaho na<br>
+Konting pilit pa'y masusugatan<br>
+Bumitaw ka na<br>
+<br>
+[Pre-Chorus]<br>
+Sa pagtakbo ng oras<br>
+Unti-unting kumupas<br>
+Ang dating wagas<br>
+Ay magwawakas<br>
+<br>
+[Chorus]<br>
+Masisisi mo ba<br>
+Kung ayaw na talaga?<br>
+Kung ang pag-ibig mo<br>
+Tuluyang maglaho<br>
+O ba't nagbago bigla<br>
+Mga titig ay nag-iba<br>
+Ika'y lumalayo<br>
+Tadhana ba ito?<br>
+<br>
+[Bridge]<br>
+Tayo'y nagkamali<br>
+Tayo ay nasugatan<br>
+Maling galaw<br>
+Lahat ay sasabit<br>
+Ito na ba'ng huli<br>
+Tayo'y magpapaalam<br>
+Na sa ating nakaraan<br>
+At bibitawan<br>
+<br>
+[Breakdown]<br>
+Masisisi mo ba<br>
+Kung ayaw na talaga?<br>
+Kung ang pag-ibig mo<br>
+Tuluyang maglaho<br>
+<br>
+[Chorus]<br>
+Masisisi mo ba<br>
+Kung ayaw na talaga?<br>
+Kung ang pag-ibig mo<br>
+Tuluyang maglaho<br>
+O ba't nagbago bigla<br>
+Mga titig ay nag-iba<br>
+Ika'y papalayo<br>
+Tadhana ba ito?<br>
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://www.youtube.com/embed/gY91e0G3GVo?rel=0" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://drive.google.com/uc?export=download&id=1epg-esUmS6cJd8k9XDpBgMpj5WB-UZHl" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

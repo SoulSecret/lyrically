@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | April Boy - Ang Tanging Alay Ko</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageworship/alay-ko.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Ang Tanging Alay Ko</h2>
+    <p>Singer: April Boy</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>Salamat sa iyo<br>
+Aking Panginoong Hesus<br>
+Ako’y inibig mo<br>
+At inangking lubos<br>
+<br>
+Ang tanging alay ko sa’yo aking Ama<br>
+Ay buong buhay ko puso’t kaluluwa<br>
+Di makayanang maipagkaloob<br>
+Mamahaling hiyas ni gintong sinukob<br>
+<br>
+Ang tanging dalangin O Dios ay tanggapin<br>
+Ang tanging alay ko nawa ay gamitin<br>
+Ito lamang Ama wala ng iba pa<br>
+Aking hinihiling<br>
+<br>
+Di ko akalain<br>
+Na ako’y binigyan mong pansin<br>
+Ang taong tulad ko’y<br>
+Di dapat mahalin<br>
+<br>
+Ang tanging alay ko sa’yo aking Ama<br>
+Ay buong buhay ko puso’t kaluluwa<br>
+Di makayanang maipagkaloob<br>
+Mamahaling hiyas ni gintong sinukob<br>
+<br>
+Ang tanging dalangin O Dios ay tanggapin<br>
+Ang tanging alay ko nawa ay gamitin<br>
+Ito lamang Ama wala ng iba pa<br>
+Aking hinihiling<br>
+Aking hinihintay<br>
+Ang iyong pagbabalik Hesus<br>
+Ang makapiling ka’y<br>
+Kagalakang lubos<br>
+<br>
+Ang tanging alay ko sa’yo aking Ama<br>
+Ay buong buhay ko puso’t kaluluwa<br>
+Di makayanang maipagkaloob<br>
+Mamahaling hiyas ni gintong sinukob<br>
+<br>
+Ang tanging dalangin O Dios ay tanggapin<br>
+Ang tanging alay ko nawa ay gamitin<br>
+Ito lamang Ama wala ng iba pa<br>
+Aking hinihiling
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://www.youtube.com/embed/4SyUW1rqM4U?rel=0" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1rB71BU9Z4HiDHLZdonaxZnXD4VnIdJ0C" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

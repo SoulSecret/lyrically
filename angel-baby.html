@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Troye Sivan - Angel Baby</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/angel-baby.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Angel Baby</h2>
+    <p>Singer: Troye Sivan</p>
+    <p class="track">Track - TS3* (2022)</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+I need a lover to keep me sane<br>
+Pull me from hell bring me back again<br>
+Play me the classics, something romantic<br>
+Give him my all when I don't even have it<br>
+I always dreamed of a solemn face<br>
+Someone who feels like a holiday<br>
+But now I'm in pieces, barely believing<br>
+Starting to think that I've lost all feeling<br>
+<br>
+[Pre-Chorus]<br>
+You came out the blue on a rainy night, no lie<br>
+I tell you how I almost died, while you're bringing me back to life<br>
+<br>
+[Chorus]<br>
+I just wanna live in this moment forever<br>
+'Cause I'm afraid that living couldn't gеt any better<br>
+Started giving up on thе word "forever"<br>
+Until you gave up heaven so we could be together<br>
+<br>
+[Post-Chorus]<br>
+You're my angel, angel baby<br>
+Angel, you're my angel baby<br>
+Baby, you're my angel, angel baby<br>
+<br>
+[Verse 2]<br>
+I'll fall in love with the little things<br>
+Counting the tattoos on your skin<br>
+Tell me a secret<br>
+And baby I'll keep it<br>
+And maybe we can play house for the weekend<br>
+<br>
+[Pre-Chorus]<br>
+You came out the blue on a rainy night, no lie<br>
+I'll tell you how I almost died<br>
+While you're bringing me back to life<br>
+<br>
+[Chorus]<br>
+I just wanna live in this moment forever<br>
+'Cause I'm afraid that living couldn't get any better<br>
+Started giving up on the word "forever"<br>
+Until you gave up heaven so we could be together<br>
+<br>
+[Post-Chorus]<br>
+You're my angel, angel baby<br>
+Angel, you're my angel baby<br>
+Baby, you're my angel, angel baby<br>
+<br>
+[Bridge]<br>
+All the sick and twisted nights that I've been waiting for ya<br>
+They were worth it all along, yeah<br>
+<br>
+[Chorus]<br>
+I just wanna live in this moment forever<br>
+'Cause I'm afraid that living couldn't get any better<br>
+Started giving up on the word "forever" (Ooh, forever)<br>
+Until you gave up heaven so we could be together<br>
+<br>
+[Post-Chorus]<br>
+You're my angel, angel baby<br>
+Angel, you're my angel baby<br>
+Baby, you're my angel, angel baby<br>
+Angel, angel baby<br>
+Angel, you're my angel, baby<br>
+Baby, you're my angel, angel baby
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11keyQBUt7UXCGgb97A40O9J6IQ1u89Cv/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1kCugOJVfvrEHpGoYvnGS3HjKaLNKn1mH" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

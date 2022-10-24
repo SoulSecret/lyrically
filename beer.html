@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Itchyworms - Beer</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagerock/beer.png">
+        </div>  
+    <div class="music-info">
+    <h2>Beer</h2>
+    <p>Singer: Itchyworms</p>
+    <p class="track">Track 7 - Noon Time Show</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Nais kong magpakalasing<br>
+Dahil wala ka na<br>
+Nakatingin sa salamin<br>
+At nag-iisa<br>
+Nakatanim pa rin ang gumamelang<br>
+Binalik mo sakin<br>
+Nang tayo'y maghiwalay<br>
+Ito'y katulad ng damdamin ko<br>
+Kahit buhusan mo ng beer ayaw pang mamatay<br>
+<br>
+[Pre-Chorus]<br>
+Giliw, wag mo sanang limutin<br>
+Ang mga araw na hindi sana naglaho<br>
+Mga anak at bahay nating pinaplano<br>
+Lahat ng ito'y nawala<br>
+Nung iniwan mo ako<br>
+Kaya ngayon<br>
+<br>
+[Chorus]<br>
+Ibuhos na ang beer<br>
+Sa aking lalamunan<br>
+Upang malunod na ang puso kong nahihirapan<br>
+Bawat patak anong sarap<br>
+Ano ba talagang mas gusto ko<br>
+Ang beer na to o ang pag-ibig mo<br>
+<br>
+[Verse 2]<br>
+Nais kong magpakasabog<br>
+Dahil olats ako<br>
+Kahit ano hihithitin<br>
+Kahit tambucho<br>
+Kukuha ako ng beer at ipapakulo sa kaldero<br>
+Lalanghapin ang usok nito<br>
+Lahat ay aking gagawin upang hindi ko na isiping nag-iisa na ako<br>
+<br>
+[Chorus]<br>
+Ibuhos na ang beer<br>
+Sa aking lalamunan<br>
+Upang malunod na ang puso kong nahihirapan<br>
+Bawat patak anong sarap<br>
+Ano ba talagang mas gusto ko<br>
+Ang beer na to o ang pag-ibig mo<br>
+<br>
+[Pre-Chorus]<br>
+Giliw, wag mo sanang limutin<br>
+Ang mga araw na hindi sana naglaho<br>
+Mga anak at bahay nating pinaplano<br>
+Lahat ng ito'y nawala<br>
+Nung iniwan mo ako<br>
+Kaya ngayon<br>
+<br>
+[Chorus]<br>
+Ibuhos na ang beer<br>
+Sa aking lalamunan<br>
+Upang malunod na ang puso kong nahihirapan<br>
+Bawat patak anong sarap<br>
+Ano ba talagang mas gusto ko<br>
+Ang beer na to o ang pag-ibig mo
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11y20qv_yfYSJj06fMUpj9x4EItqAu03w/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1t4cHJVQTJ2lGPFVN8RynxTd2BOXV6g6N" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

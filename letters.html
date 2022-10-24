@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Maximillian - Letters</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/letters.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Letters</h2>
+    <p>Singer: Maximillian</p>
+    <p class="track">Track 11 - Too Young</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Same place but something's different<br>
+Yeah I noticed something's off<br>
+So fast I almost missed it<br>
+But it's too late and now you're gone<br>
+<br>
+[Pre-Chorus]<br>
+I spilled another glass of wine<br>
+Killed the lights to pass the time<br>
+'Cause you're not here to ask me how I feel<br>
+<br>
+[Chorus]<br>
+I still hope you read my letters<br>
+That they bring you peace at night<br>
+Even at our darkest hour<br>
+I know that we'll be alright<br>
+<br>
+[Verse 2]<br>
+Makes no sense, I don't believe it<br>
+Is it true that thеy can just take you away<br>
+Walls were nеver made for freedom<br>
+And I'll break every single one to see your face<br>
+<br>
+[Pre-Chorus]<br>
+And I will hold the hourglass<br>
+Counting every grain of sand<br>
+'Cause nothing feels the same until you're home<br>
+<br>
+[Chorus]<br>
+I still hope you read my letters<br>
+That they bring you peace at night<br>
+Even at our darkest hour<br>
+I know that we'll be alright<br>
+<br>
+[Bridge]<br>
+So many faces to remember<br>
+But yours is the only one I know<br>
+The one I believe in<br>
+The place I call home<br>
+<br>
+[Outro]<br>
+I'll light a light for you tonight<br>
+Send out a prayer in my mind<br>
+'Cause I know we'll be alright
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13OBuMPPVqFUAPXyA8RYc0LWC8xgHci1-/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1tvrYLpOfbDHNcPH-iEUlOfdbE1DPwurm" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

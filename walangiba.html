@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Ezra Band - Walang Iba</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageopm/walangiba.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Walang Iba</h2>
+    <p>Singer: Ezra Band</p>
+    <p class="track">Track 6 - Kaye Cal</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>Ilang beses ng nag-away<br>
+Hanggang sa magkasakitan<br>
+Na 'di alam ang pinagmulan<br>
+Pati maliliit na bagay<br>
+Na napag-uusapan<br>
+Bigla na lang pinag-aawayan<br>
+<br>
+Ngunit kahit na ganito<br>
+Madalas na 'di tayo magkasundo<br>
+Ikaw lang ang gusto kong makapiling<br>
+Sa buong buhay ko<br>
+<br>
+Kahit na binabato mo ako ng kung anu-ano<br>
+Ikaw pa rin ang gusto ko<br>
+Kahit na sinasampal mo ako't<br>
+Sinisipa't nasusugatan mo<br>
+Ikaw pa rin<br>
+Walang iba<br>
+Ang gusto kong makasama<br>
+Walang iba<br>
+Walang iba<br>
+Nagsimula sa mga asaran<br>
+Hanggang sa magkainitan<br>
+Isang eksenang bangayan na naman<br>
+Ba't ba kase pinagpipilitan<br>
+Ang hindi maintindihan<br>
+Di naman kinakailangan<br>
+<br>
+Ngunit kahit na ganito<br>
+Madalas na di tayo magkasundo<br>
+Ikaw lang ang gusto kong makapiling<br>
+Sa buong buhay ko<br>
+<br>
+Kahit na binabato mo ako ng kung anu-ano<br>
+Ikaw pa rin ang gusto ko<br>
+Kahit na sinasampal mo ako't<br>
+Sinisipa't nasusugatan mo<br>
+Ikaw pa rin<br>
+Walang iba<br>
+Ang gusto kong makasama<br>
+Walang iba<br>
+<br>
+Kahit na binabato mo ako ng kung anu-ano<br>
+Ikaw pa rin ang gusto ko<br>
+Kahit na sinasampal mo ako't<br>
+Sinisipa't nasusugatan mo<br>
+Ikaw pa rin<br>
+Walang iba<br>
+Ang gusto kong makasama<br>
+Wag ka ng mawawala<br>
+Hmm, walang iba<br>
+Walang iba
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/1-uVVlw44dzcqwm7s3p2pjlz64L_Q_e_S/preview" frameborder="0"></iframe>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1hfrn-KC_1niP8ghbb8bXwVneeerqA9hy" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+							<script src="search.js"></script>	
+				</body>
+				
+</html>

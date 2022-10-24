@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Rocksteddy - Magpakailanman</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+													<p class="logo"><span>Lyrical</span>ly</p>
+							<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagerock/magpakailanman.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Magpakailanman</h2>
+    <p>Singer: Ricksteddy</p>
+    <p class="track">Track 11 - tsubtsatagilidakeyn</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>Darating din ang araw<br>
+Na tayo'y tatanda<br>
+Babagal ang mga paa<br>
+At manlalabo ang mata<br>
+Hindi mamalayan ang pagikot ng mundo<br>
+<br>
+Darating din ang panahon<br>
+Na malalagas ang buhok<br>
+Balat ay kukulubot<br>
+At makukuba ang likod<br>
+Hindi malilimutan ang pagibig ko sayo magpakailanman<br>
+<br>
+Panahon ay lilipas din<br>
+Mga araw ay daraan<br>
+Ang mundo ay papanaw din ngunit hindi ang aking puso<br>
+Ngunit hindi ang pagibig ko sayo<br>
+<br>
+Darating din ang bukas<br>
+Na tayo'y kukupas<br>
+Ang buhay ay magwawakas<br>
+Kasama ang gunita<br>
+Ngunit hindi malilimutan ang pagibig ko sayo magpakailanman<br>
+<br>
+Panahon ay lilipas din<br>
+Mga araw ay daraan<br>
+Ang mundo ay papanaw din ngunit hindi ang aking puso<br>
+Ngunit hindi ang pagibig ko sayo<br>
+<br>
+Habang buhay kitang mamahalin<br>
+Habang buhay kitang hihintayin<br>
+Habang buhay kitang mamahalin magpakailanman<br>
+<br>
+Panahon ay lilipas din<br>
+Mga araw ay daraan<br>
+Ang mundo ay papanaw din ngunit hindi ang aking puso<br>
+<br>
+Panahon ay lilipas din<br>
+Mga araw ay daraan<br>
+Ang mundo ay papanaw din ngunit hindi ang aking puso<br>
+Ngunit hindi ang pag-ibig ko sayo<br>
+Sayo Sayo Sayo Sayo Sayo Sayo Sayo
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/120tTEVvMlyS-v5deEkQzaWR8IfkkJ_Rq/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1mVIxz9LEh1zA7bh5JaEYCLYraPxakhb7" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  function audioEnded () {
+											document.getElementById("status").innerHTML="Audio End";
+											icon.src ="image/play.png"
+											}
+											mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

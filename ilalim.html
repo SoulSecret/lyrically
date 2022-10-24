@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Chocolate Factory - Ilalim</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagereggae/ilalim.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Ilalim</h2>
+    <p>Singer: Chocolate Factory</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Chorus]<br>
+Ila ila ila ila, ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim.<br>
+Ila ila ila, ila ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim<br>
+<br>
+[Verse 1]<br>
+Nakita nyo naba itong kapaligiran natin<br>
+Pakonti na ang ibon tubig pa ay maitim<br>
+At ang asul na dagat at ilog ay nagdilim<br>
+Ang sariwang hangin ay pawala narin<br>
+Ano ano ba ang ating dapat gawin.<br>
+Bakit hindi ba natin ito bigyan ng pansin<br>
+Daing ng kalikasan ay inyong dingin<br>
+Kinabukasan ng kabataan ay ating isipin<br>
+<br>
+[Chorus]<br>
+Ila ila ila ila, ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim.<br>
+Ila ila ila, ila ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim<br>
+<br>
+[Verse 2]<br>
+Maraming may ugaling magkalat ng sigarilyo<br>
+Jumingel sa kalsada walang pake na parang aso<br>
+Mahilig sa pagkain kung saan saan ang tapon<br>
+Daanan ng tubig ay may kalawang at barado<br>
+Kayat huwag magtaka konting ulam mayroong baha<br>
+Kayat huwag magisip kung ang syodad mayroong daga<br>
+Sa pag babaga tayoy sama samang mag simula<br>
+At pagdating ng panahon tayoy hindi mukang kawawa<br>
+<br>
+[Chorus]<br>
+Ila ila ila ila, ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim.<br>
+Ila ila ila, ila ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim<br>
+<br>
+[Bridge]<br>
+Ayoko mang isipin masakit ito para sa akin<br>
+Dayuhan man dito sa bayan alag kung tumungin<br>
+Bakit di ba natin mahalin ang sariling bayan<br>
+Dimo ba napapansin tayo rin ang nahihirapan<br>
+<br>
+[Chorus]<br>
+Ila ila ila ila, ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim.<br>
+Ila ila ila, ila ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim<br>
+Ila ila ila ila, ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim.<br>
+Ila ila ila, ila ila ila ilalim<br>
+Ila ila ila, ila ila ila sa dilim
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12oHzws9x9A-2fcbxAJ0CxCni9XFBBS2L/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1nT2KcsZ8xxrJIViWmkWjjG1zmB_PYmT6" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

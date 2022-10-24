@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Miley Cyrus - Party in the USA</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/party.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Party in the USA</h2>
+    <p>Singer: Miley Cyrus</p>
+    <p class="track">Track 2 - The Time of our Lives</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Verse 1]<br>
+I hopped off the plane at LAX<br>
+With a dream and my cardigan<br>
+Welcome to the land of fame excess (Woah)<br>
+Am I gonna fit in?<br>
+Jumped in the cab, here I am for the first time<br>
+Look to my right, and I see the Hollywood sign<br>
+This is all so crazy<br>
+Everybody seems so famous<br>
+<br>
+[Pre-Chorus]<br>
+My tummy's turnin' and I'm feelin' kinda homesick<br>
+Too much pressure and I'm nervous<br>
+That's when the taxi man turned on the radio<br>
+And a JAY-Z song was on<br>
+And a JAY-Z song was on<br>
+And a JAY-Z song was on<br>
+<br>
+[Chorus]<br>
+So I put my hands up<br>
+They're playin' my song, the butterflies fly away<br>
+I'm noddin' my head like, "Yeah"<br>
+Movin' my hips like, "Yeah"<br>
+Got my hands up, they're playing my song<br>
+I know I'm gonna be okay<br>
+Yeah, it's a party in the U.S.A. <br>
+Yeah, it's a party in the U.S.A. <br>
+<br>
+[Verse 2]<br>
+Get to the club in my taxi cab<br>
+Everybody's lookin' at me now<br>
+Like, "Who's that chick that's rockin' kicks?<br>
+She gotta be from out of town"<br>
+So hard with my girls not around me<br>
+It's definitely not a Nashville party<br>
+'Cause all I see are stilettos<br>
+I guess I never got the memo<br>
+<br>
+[Pre-Chorus]<br>
+My tummy's turnin' and I'm feelin' kinda homesick<br>
+Too much pressure and I'm nervous<br>
+That's when the DJ dropped my favorite tune<br>
+And a Britney song was on<br>
+And a Britney song was on<br>
+And a Britney song was on<br>
+<br>
+[Chorus]<br>
+So I put my hands up<br>
+They're playin' my song, the butterflies fly away<br>
+I'm noddin' my head like, "Yeah"<br>
+Movin' my hips like, "Yeah"<br>
+Got my hands up, they're playing my song<br>
+I know I'm gonna be okay<br>
+Yeah, it's a party in the U.S.A. <br>
+Yeah, it's a party in the U.S.A. <br>
+<br>
+[Bridge]<br>
+Feel like hopping on a flight (On a flight)<br>
+Back to my hometown tonight (Town tonight)<br>
+Something stops me every time (Every time)<br>
+The DJ plays my song and I feel alright (Hey, hey)<br>
+<br>
+[Chorus]<br>
+So I put my hands up<br>
+They're playing my song, the butterflies fly away<br>
+I'm noddin' my head like, "Yeah" (N-n-n-noddin' my head)<br>
+Movin' my hips like, "Yeah" (Ooh, yeah)<br>
+Got my hands up, they're playing my song<br>
+I know I'm gonna be okay (Gonna be okay)<br>
+Yeah (Na-na, na-na), it's a party in the U.S.A. <br>
+Yeah, it's a party in the U.S.A. <br>
+So I put my hands up<br>
+They're playing my song, the butterflies fly away (Flying away)<br>
+I'm noddin' my head like, "Yeah" (Noddin' my head like, "Yeah")<br>
+Movin' my hips like, "Yeah" (Movin' my hips like, "Yeah")<br>
+Got my hands up, they're playing my song<br>
+I know I'm gonna be okay (I'm gonna be okay)<br>
+Yeah (Yeah), it's a party in the U.S.A. <br>
+Yeah (Ha-ha-ha-ha), it's a party in the U.S.A. 
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13rGGPExujmAgLwQVs-omOKmI70EX_SkH/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1ooudgTa_rfbDR5lx_186Xon8_WVSfjWN" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

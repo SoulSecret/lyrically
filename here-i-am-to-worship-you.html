@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Tim Hughes - Here I am to Worship</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageworship/timhughes.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Here I am to Worship</h2>
+    <p>Singer: Tim Hughes</p>
+    <p class="track">Track 3 - Here I Am To Worship </p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Light of the world<br>
+You step down into darkness<br>
+Opened my eyes let me see,<br>
+Beauty that made this heart adore you<br>
+Hope of a life spent with you,<br>
+<br>
+[Chorus]<br>
+And here I am to worship,<br>
+Here I am to bow down,<br>
+Here I am to say that you're my God,<br>
+You're altogether lovely,<br>
+Altogether worthy,<br>
+Altogether wonderful to me<br>
+<br>
+[Verse 2]<br>
+King of all days, oh so highly exalted<br>
+Glorious in heaven above,<br>
+Humbly you came to the earth you created<br>
+All for love's sake became poor,<br>
+<br>
+[Chorus]<br>
+And here I am to worship,<br>
+Here I am to bow down,<br>
+Here I am to say that you're my God,<br>
+You're altogether lovely,<br>
+Altogether worthy,<br>
+Altogether wonderful to me<br> 
+<br>
+[Bridge]<br>
+I'll never know how much it cost<br>
+to see my sin upon that cross<br>
+I'll never know how much it cost<br>
+to see my sin upon that cross<br>
+And I'll never know how much it cost<br>
+to see my sin upon that cross<br>
+No I'll never know how much it cost<br>
+to see my sin upon that cross<br>
+<br>
+[Chorus]<br>
+Here I am to worship,<br>
+Here I am to bow down,<br>
+Here I am to say that you're my God,<br>
+You're altogether lovely,<br>
+Altogether worthy,<br>
+Altogether wonderful to me.
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://www.youtube.com/embed/qhq0kDw0E8c?rel=0" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1upa8Ys6wifd95eiF077y-EhYMI8ph87z" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

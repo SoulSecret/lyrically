@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Kolohe Kai - Heartstring</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagereggae/heartstring.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Heartstring</h2>
+    <p>Singer: Kolohe Kai</p>
+    <p class="track">rack 8 - Summer to Winter</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Intro]<br>
+Oh, oh, oh, oh<br>
+Oh, oh, oh, oh<br>
+<br>
+[Verse 1]<br>
+You don’t even have to try, cause you're already mine<br>
+The way you light up the night, is like a million fireflies<br>
+Baby, you set a blaze and all of the ocean<br>
+Could never take away your flame<br>
+<br>
+[PreChorus]<br>
+Cause the stage was set the moment<br>
+We met and builiding like a bass drop<br>
+You and me feeling this beat, oh<br>
+<br>
+[Chorus]<br>
+You're pulling on my Heartstrings everyday<br>
+Wrapped around your finger, I just wanna linger<br>
+And listen to the sweetest melody<br>
+Baby I’m yours, my heart is yours, yours to play<br>
+Oh, oh, oh, oh<br>
+Oh, oh, oh, oh<br>
+<br>
+[Verse 2]<br>
+Every time I go to sleep, it feels like I’m awake<br>
+I don’t even have to dream<br>
+Just as long as we walk in paradise side by side<br>
+No rockstar like you girl<br>
+Every kiss feels like hits, oh, yeah<br>
+<br>
+[PreChorus]<br>
+And the stage was set the moment we met<br>
+And building like a bass drop<br>
+You and me feeling this beat, oh<br>
+<br>
+[Chorus]<br>
+You're pulling on my Heartstrings everyday<br>
+Wrapped around your finger, I just wanna linger<br>
+And listen to the sweetest melody<br>
+Baby I’m yours, my heart is yours, yours to play<br>
+<br>
+[Hook]<br>
+Oh, oh, oh, oh (Come on and play, yeah, my heartstrings)<br>
+Oh, oh, oh, oh<br>
+<br>
+[Bridge]<br>
+Baby girl you move me like a symphony<br>
+And every time you smile I give up (every time), yeah, oh<br>
+Every time you smile I give up (up), up (up), up (up)<br>
+<br>
+[Chorus]<br>
+You're pulling on my Heartstrings every day<br>
+Baby just snap your fingers and darling I will linger<br>
+And listen to the sweetest melody<br>
+Baby I’m yours, my heart is yours, yours to play<br>
+<br>
+[Outro]<br>
+Oh, oh, oh, oh<br>
+Oh, oh, oh, oh<br>
+My heartstrings
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12IBWUo7MC9ipABJXlP0EU-GF6b2hdUId/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1tkzpkxFZsx-p0RYwX69XLT19WAayL6J-" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Dhruv - Double Take</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/double-take.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Double Take</h2>
+    <p>Singer: Dhruv</p>
+    <p class="track">Track 3 - Rapunzel</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Intro]<br>
+Ooh-ooh-ooh-ooh<br>
+Ooh-ooh-ooh<br>
+Ooh-ooh-ooh-ooh<br>
+<br>
+[Verse 1]<br>
+I could say I never dare<br>
+To think about you in that way<br>
+But, I would be lying<br>
+And I pretend I'm happy for you<br>
+When you find some dude to take home<br>
+But I won't deny that<br>
+<br>
+[Pre-Chorus]<br>
+In the midst of the crowds<br>
+In the shapes, in the clouds<br>
+I don't see nobody but you<br>
+In my rose-tinted dreams<br>
+Wrinkled silk on my sheets<br>
+I don't see nobody but you<br>
+<br>
+[Chorus]<br>
+Boy, you got me hooked onto something<br>
+Who could say that they saw us coming?<br>
+Tell me, do you feel the love?<br>
+Spend a summer or a lifetime with me<br>
+Let me take you to the place of your dreams<br>
+Tell me, do you feel the love?<br>
+Ooh-ooh-ooh-ooh<br>
+<br>
+[Verse 2]<br>
+And I could say I never unzipped<br>
+Those blue Levi's inside my head<br>
+But that's far from the truth<br>
+Don't know what's come over me<br>
+It seems like yesterday when I said<br>
+“We'll be friends forever”<br>
+<br>
+[Pre-Chorus]<br>
+Constellations of stars<br>
+Murals on city walls<br>
+I don't see nobody but you<br>
+You're my vice, you're my muse<br>
+You're a nineteenth floor view<br>
+I don't see nobody but you<br>
+<br>
+[Chorus]<br>
+Boy, you got me hooked onto something<br>
+Who could say that they saw us coming?<br>
+Tell me, do you feel the love?<br>
+Spend a summer or a lifetime with me<br>
+Let me take you to the place of your dreams<br>
+Tell me, do you feel the love?<br>
+<br>
+[Chorus]<br>
+Boy, you got me hooked onto something<br>
+Who could say that they saw us coming?<br>
+Tell me, do you feel the love?<br>
+Spend a summer or a lifetime with me<br>
+Let me take you to the place of your dreams<br>
+Tell me, do you feel the love?<br>
+<br>
+[Outro]<br>
+Do you feel the love? (Ooh-ooh-ooh-ooh)<br>
+Do you feel the love?<br>
+Do you feel the love?<br>
+Do you feel the love?<br>
+Feel the love<br>
+Feel the love<br>
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11gXLvL26J4rWcaB5Wbd5j_FBnr-BCMbo/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+						</body>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1k2anIaojDADDQuvv0qZK7Pip4DOmAV6R" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

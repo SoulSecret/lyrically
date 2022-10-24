@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Taylor Swift - Crazier</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/crazier.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Crazier</h2>
+    <p>Singer: Taylor Swift</p>
+    <p class="track">Track 13 - Itunes Essentials</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Verse 1]<br>
+I'd never gone with the wind, just let it flow<br>
+Let it take me where it wants to go<br>
+'Til you open the door, there's so much more<br>
+I'd never seen it before<br>
+I was tryin' to fly but I couldn't find wings<br>
+But you came along and you changed everything<br>
+<br>
+[Chorus]<br>
+You lift my feet off the ground<br>
+You spin me around<br>
+You make me crazier, crazier<br>
+Feels like I'm fallin' and I am lost in your eyes<br>
+You make me crazier, crazier, crazier<br>
+<br>
+[Verse 2]<br>
+I've watched from a distance as you made life your own<br>
+Every sky was your own kind of blue<br>
+And I wanted to know how that would feel<br>
+And you made it so real<br>
+You showed me somethin' that I couldn't see<br>
+You opened my eyes<br>
+And you made me believe<br>
+<br>
+[Chorus]<br>
+You lift my feet off the ground<br>
+You spin me around<br>
+You make me crazier, crazier<br>
+Feels like I'm fallin' and I am lost in your eyes<br>
+You make me crazier, crazier, crazier, oh<br>
+<br>
+[Bridge]<br>
+Baby, you showed me what livin' is for<br>
+I don't wanna hide anymore<br>
+Oh-oh<br>
+<br>
+[Chorus]
+You lift my feet off the ground<br>
+You spin me around<br>
+You make me crazier, crazier<br>
+Feels like I'm fallin' and I am lost in your eyes<br>
+You make me crazier, crazier, crazier<br>
+Crazier, crazier
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13qX9Fxn8gWsnw4LyozBC5_OTubgS8Isk/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1oUvC-4WkpCfvQ8LbXHQLokmfHW64Or8V" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

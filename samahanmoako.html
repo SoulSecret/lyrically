@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Hey its Je - Samahan Mo Ako</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/samahanmoako.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Samahan Mo Ako</h2>
+    <p>Singer: Hey its Je</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Chorus]<br>
+Samahan mo naman ako ngayong gabi<br>
+Sabay natin palitawin mga ngiti<br>
+Kalimutan mga problema<br>
+Halika muna’t magpahinga<br>
+<br>
+[1st verse]<br>
+Nakakapagod na kasi nangyayare sa mundo ko<br>
+Ewan ko ba bat naging ganito to<br>
+Pagkatapos ng isa may susunod na dalawa<br>
+Walang katapusang paghihirap to<br>
+Buti nalang nanjan ka aking laging sandalan<br>
+Ikaw lang at ikaw ang gusto ko na makasama<br>
+Ngayong gabi ikaw ang gusto kong makatabi<br>
+Kakwentuhan ng mga bagay o kaya mag muni-muni<br>
+Mga gulo sa isipan natin muna’y isantabi<br>
+Gumawa ng ala alang masarap na balikan<br>
+Pahiram ng orasan<br>
+Pwedeng akin na muna yan?<br>
+Kelangan ko lang ng ikaw<br>
+Ayoko munang mag isa<br>
+Pwedeng dito ka muna?<br>
+<br>
+[Chorus]<br>
+Samahan mo naman ako ngayong gabi<br>
+Sabay natin palitawin mga ngiti<br>
+Kalimutan mga problema<br>
+Halika muna’t magpahinga<br>
+<br>
+[2nd verse]<br>
+Pag nanjan ka, ako’y kumakalma<br>
+Ikaw lang ang bitamina sa gumugulo ng isip ko<br>
+Na hindi ko mapunto<br>
+Mahirap lang kasi puno ka ng problema<br>
+Hindi mo pa kasama yung nagbibigay ligaya<br>
+Kaya sana ako’y masamahan<br>
+Kahit isang gabi ngayong gabi ngayon lang beh..<br>
+Samahan moko lumayag patungo sa kahit saan<br>
+Sabay natin na balikan masasayang nakaraan<br>
+Kung pwede lang abutin tayo ng isang buwan<br>
+Wag ka sanang magsasawang ako’y iyong pakinggan<br>
+Pangako ko nandito lang ako sayo<br>
+Makikinig mag aalaga kahit di hinihingi<br>
+Sana ngayon ay pwede ka kasi ako'y nangangamba<br>
+Kelangan ko lang ng ikaw<br>
+Ayoko munang mag isa<br>
+Pwedeng dito ka muna?<br>
+<br>
+[Chorus]<br>
+Samahan mo naman ako ngayong gabi<br>
+Sabay natin palitawin mga ngiti<br>
+Kalimutan mga problema<br>
+Halika muna’t magpahinga
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11S5a89Tp_-FlRdsnA-frAwRW_dA_tTjC/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1jtsHnkYkT9Nc0bHDpZPiu57neAfGsB9y" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

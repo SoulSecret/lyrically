@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<link rel="icon" href="image/loco.jpg">
+								<title>Lyrically | Loren Allred - Never Enough</title>
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+												
+												
+	<div class="container2">
+        <div class="iconDetails">
+            <img src="imagephtophits/neverenough.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Never Enough</h2>
+    <p>Singer: Loren Allred</p>
+    <p class="track">Track 6 - The Greatest Showman<br>(Original Motion Picture Soundtrack)</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+<p>
+[Verse 1]<br>
+I'm tryin' to hold my breath<br>
+Let it stay this way<br>
+Can't let this moment end<br>
+You set off a dream in me<br>
+Gettin' louder now<br>
+Can you hear it echoing?<br>
+<br>
+[Pre-Chorus]<br>
+Take my hand<br>
+Will you share this with me?<br>
+'Cause darling without you<br>
+<br>
+[Chorus]<br>
+All the shine of a thousand spotlights<br>
+All the stars we steal from the night sky<br>
+Will never be enough<br>
+Never be enough<br>
+Towers of gold are still too little<br>
+These hands could hold the world but it'll<br>
+Never be enough<br>
+Never be enough<br>
+<br>
+[Post-Chorus]<br>
+For me<br>
+Never, never<br>
+Never, never<br>
+Never, for me<br>
+For me<br>
+Never enough<br>
+Never enough<br>
+Never enough<br>
+For me<br>
+For me<br>
+For me<br>
+<br>
+[Chorus]<br>
+All the shine of a thousand spotlights<br>
+All the stars we steal from the night sky<br>
+Will never be enough<br>
+Never be enough<br>
+Towers of gold are still too little<br>
+These hands could hold the world but it'll<br>
+Never be enough<br>
+Never be enough<br>
+<br>
+[Post-Chorus]<br>
+For me<br>
+Never, never<br>
+Never, never<br>
+Never, for me<br>
+For me<br>
+Never enough<br>
+Never, never<br>
+Never enough<br>
+Never, never<br>
+Never enough<br>
+For me<br>
+For me<br>
+For me<br>
+<br>
+[Outro]<br>
+For me</p>
+</div>
+								</div>
+								<div class="video">
+			       <iframe src="https://www.youtube.com/embed/6jZVsr7q-tE?rel=0" frameborder="0"></iframe>
+							</div>
+								</div>
+								<audio id="mySong">
+												<source src="https://drive.google.com/uc?export=download&id=1e2TTatqNZXnFGXzcHtaV9Xid6XWNpzXd" type="audio/mp3">
+								</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "190px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

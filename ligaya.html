@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Ligaya - Mrld</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageopm/ligaya.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Ligaya</h2>
+    <p>Singer: Mrld</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Sa'kin nakatingin<br>
+Parang lumilipad na lang sa hangin<br>
+'Di na mapakali<br>
+Ikaw lang naman ang ninanais<br>
+'Di ba nalilito ang puso mo<br>
+kung saan na papunta?<br>
+Sa akin ba sinta?<br>
+<br>
+[Pre-Chorus]<br>
+'Wag mo sanang isipin<br>
+Na parang wala lang sa'kin<br>
+Ang lahat nating pinagsamahan<br>
+<br>
+[Chorus]<br>
+Isasayaw kita na para bang ito<br>
+Na ang panghuli natin sinta<br>
+'Wag kang mag-alala<br>
+'Di kita hahayaang mag-isa<br>
+Sasamahan nga kita<br>
+Sa dulo ng ligaya<br>
+<br>
+[Verse 2]<br>
+'Di pa ba halata<br>
+Na iba ang ihip ng hangin dito?<br>
+Kung pwede lang sabihin<br>
+Ng diretsahan ang aking gusto<br>
+Teka ang bulag mo naman<br>
+Kung 'di pa rin na sisilayan<br>
+Nagbago na ang pagtingin<br>
+<br>
+[Pre-Chorus]<br>
+'Wag mo sanang isipin<br>
+Na parang wala lang sa'kin<br>
+Ang lahat nating pinagsamahan<br>
+<br>
+[Chorus]<br>
+Isasayaw kita na para bang ito<br>
+Na ang panghuli natin sinta<br>
+'Wag kang mag-alala<br>
+'Di kita hahayaang mag-isa<br>
+Sasamahan nga kita<br>
+Sa dulo ng ligaya<br>
+<br>
+[Bridge]<br>
+At ang oras ay tumatakbo<br>
+'Di pa rin alam kung gusto mo rin ako<br>
+<br>
+[Chorus 2]<br>
+Isasayaw kita na para bang<br>
+Walang nakatingin sa'tin sinta<br>
+'Wag kang mag-alala<br>
+'Di kita hahayaang mag-isa<br>
+Sasamahan nga kita<br>
+<br>
+[Chorus]<br>
+Isasayaw kita na para bang ito<br>
+Na ang panghuli natin sinta<br>
+'Wag kang mag-alala<br>
+'Di kita hahayaang mag-isa<br>
+Sasamahan nga kita<br>
+Sa dulo
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/10PeNiv36-9KHvTJEFii81wYu0yDtqsGq/preview" frameborder="0"></iframe>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1sdwxQiRHcW04FgWbnoNEV2-EhrXY80Zh" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

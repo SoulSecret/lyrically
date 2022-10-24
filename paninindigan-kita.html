@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Ben&Ben - Paninindigan Kita</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/pk.png" >
+        </div>  
+    <div class="music-info">
+    <h2>Paninindigan Kita</h2>
+    <p>Singer: Ben&Ben </p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Verse 1]<br>
+Kakainis na ayaw mong maniwalang mahal kita<br>
+Ano pa bang kailangan kong patunayan sa'yo, sinta?<br>
+Pero naiintindihan ko naman, iniiwasan mo lang masaktan<br>
+'Di ka madedehado, kung sasagutin mo lang ako<br>
+<br>
+[Chorus]<br>
+Paninindigan kita, oo<br>
+Mamahalin kitang buong-buo<br>
+Kahit sa pagtanda, ako'y sa'yo<br>
+Paninindigan kita, oo<br>
+Anumang sabihin ng magulong mundo<br>
+Kahit ayaw nilang ako'y sa'yo<br>
+Ika'y iingatan ko<br>
+<br>
+[Verse 2]<br>
+Kakakilig ka sa tuwing lumalapit ka na, sinta<br>
+Nawawala ang angas ko, pilit man na itago pa<br>
+Mm, grabe kasi kung pa'no mo 'ko itahan kapag napupuno na 'ko<br>
+Sa ingay ng paligid, ikaw ang aking katahimikan<br>
+<br>
+[Chorus]<br>
+Paninindigan kita, oo<br>
+Mamahalin kitang buong-buo<br>
+Kahit sa pagtanda, ako'y sa'yo<br>
+Paninindigan kita, oo<br>
+Anumang sabihin ng magulong mundo<br>
+Kahit ayaw nilang ako'y sa'yo<br>
+Ika'y iingatan ko<br>
+Paninindigan kita, ha-ah-ah, ha-ah-ah-ah, ha-ah-ah-ah-ah<br>
+<br>
+[Bridge]<br>
+Sasamahan ka kahit na napapalibutan ng mga problema<br>
+Sa hirap at ginhawa, dadamayan kita, sinta<br>
+Paninindigan kita, oo<br>
+Kahit alam kong, tayo'y magbabago<br>
+Magmula umpisa hanggang dulo<br>
+Paninindigan kita<br>
+Paninindigan kita<br>
+'Wag kang mag-alala<br>
+Ako'y siguradong-sigurado<br>
+<br>
+[Chorus]<br>
+Paninindigan kita, oo<br>
+Mamahalin kitang buong-buo<br>
+Kahit sa pagtanda, ako'y sa'yo<br>
+Paninindigan kita, oo<br>
+Anumang sabihin ng magulong mundo<br>
+Kahit ayaw nilang ako'y sa'yo (Ako'y sa'yo)<br>
+Ika'y iingatan ko<br>
+<br>
+[Outro]
+Paninindigan kita, ah-ah-ah-ah<br>
+Paninindigan kita<br>
+Paninindigan kita<br>
+Ika'y iingatan ko (Paninindigan kita)<br>
+At aalagaan ko (Paninindigan kita)<br>
+Kung andito na rin tayo (Paninindigan kita)<br>
+Panindigan na natin 'to
+
+
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13yGvlYTkT7QCO4b39tN3aqSnL7wR8o9e/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1oe3PwglVetWHYEvJ56SVfEVCJQ8OATfE" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

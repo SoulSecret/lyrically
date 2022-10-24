@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Adie - Tahanan</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+									 <p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+										<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagephtophits/tahanan.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Tahanan</h2>
+    <p>Singer: Adie</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Sa araw-araw tanging ikaw ang<br>
+Palagi kong hinahangad<br>
+Laging tanaw sa'yo ang ilaw<br>
+Na nagsisilbi kong liwanag<br>
+Labis ang ngiti kapag ika'y kaharap<br>
+Ramdam ko ang pagmamahal, giliw<br>
+Namumukod tangi ka at walang katulad<br>
+Ikaw lang ang para sa 'kin<br>
+Sa'yo lang, sa'yo lang ako uuwi<br>
+<br>
+[Chorus]<br>
+Kaya naman dito ka sa piling ko<br>
+Oh, dito ka lang, dito ka lang<br>
+Bumabagal ang ikot ng mundo<br>
+Kapag ika'y nariyan<br>
+Oh, aking tahanan<br>
+<br>
+[Post-Chorus]<br>
+Ta-ta-ta-ta-ta, tahanan<br>
+Dito ka lang, dito ka lang, dito ka lang<br>
+Oh, aking tahanan<br>
+La-ta-ta-da-ta-da, mm<br>
+<br>
+[Verse 2]<br>
+Sa bawat sandali na tayo ay<br>
+Magkayakap ng mahigpit<br>
+Taglay mong init ang bumabalot sa'king<br>
+Nilalamig na damdamin<br>
+Tayong dalawa'y pinagtagpo<br>
+Ng tamang pagkakataon<br>
+Hindi maitatanggi na sa akin<br>
+Ikaw ang tanging tiyak, ah<br>
+Ikaw lang, ikaw lang ang tinatangi<br>
+<br>
+[Bridge]<br>
+Ikaw lang at ako ang naaaninag<br>
+Sa gitna ng paraiso na ating sinimulan<br>
+Oh, aking tahanan<br>
+<br>
+[Verse 3]<br>
+Pinapawi lahat ng iyong mga ngiti<br>
+Negatibo na nakadikit sa'king labi<br>
+Huli ng iyong ngiti ang aking kiliti<br>
+Katotohanan na hindi ko maitatanggi<br>
+Na mahal kita, walang iba<br>
+
+[Chorus]<br>
+Kaya naman dito ka sa piling ko<br>
+Oh, dito ka lang, dito ka lang<br>
+Bumabagal ang ikot ng mundo<br>
+Kapag ika'y nariyan<br>
+Oh, aking tahanan<br>
+<br>
+[Outro]<br>
+Ta-ta-ta-ta-ta, tahanan<br>
+Dito ka lang, dito ka lang, dito ka lang<br>
+Dito ka sa piling ko<br>
+(Pinapawi lahat ng iyong mga ngiti)<br>
+Negatibo na nakadikit sa'king labi<br>
+Bumabagal ang ikot ng mundo<br>
+(Huli ng iyong ngiti ang aking kiliti)<br>
+Katotohanan na hindi ko maitatanggi<br>
+Ta-ta-ta-ta-ta, tahanan<br>
+Dito ka lang, dito ka lang, dito ka lang<br>
+Oh, aking tahanan, mm<br>
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/1-EAxy4zklaSZIvQyea15gchhF2SgzvGh/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://drive.google.com/uc?export=download &id=1ei4taMP-gQQn3K8eUNJBlLwRzF7xFNMr" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+							<script src="search.js"></script>	
+				</body>
+				
+</html>

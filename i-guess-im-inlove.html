@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Clinton Kane - I Guess I'm Inlove</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/igii.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>I Guess I'm Inlove</h2>
+    <p>Singer: Clinton Kane</p>
+    <p class="track">Track 7 - MAYBE SOMEDAY IT’LL ALL BE OKAY </p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Oh, I'm obsessed<br>
+With the way your head is layin' on my chest<br>
+How you love the things I hate about myself that no one knows But with you,<br> 
+I see hope again<br>
+Oh, I'm a mess<br>
+When I overthink the little things in my head<br>
+You seem to always help me catch my breath<br>
+But then I lose it again<br>
+When I look at you, that's the end<br>
+<br>
+[Pre-Chorus]<br>
+And why do I get so nervous when I look into your eyes?<br>
+Butterflies can't stop me fallin' for you<br>
+<br>
+[Chorus]<br>
+And darling, this is more than anything I felt before<br>
+You're everything that I want<br>
+But I didn't think I'd find<br>
+Someone who was worth the wait<br>
+Of all the years of my heartbreak<br>
+But I know now I found the one I love<br>
+<br>
+[Verse 2]<br>
+And I love the way<br>
+You can never find the right things to say<br>
+And you can't sit still an hour in a day<br>
+I'm so in love, let's run away because us is enough<br>
+<br>
+[Pre-Chorus]<br>
+And why do I get so nervous when I look into your eyes?<br>
+And butterflies can't stop me fallin' for you<br>
+<br>
+[Chorus]<br>
+And darling, this is more than anything I felt before<br>
+You're everything that I want<br>
+But I didn't think I'd find<br>
+Someone who was worth the wait<br>
+Of all the years of my heartbreak<br>
+But I know now I found the one<br>
+<br>
+[Bridge]<br>
+Come close, let me be home for anything<br>
+Good or bad, I know it's worth it, woah, ooh-woah<br>
+<br>
+[Chorus]<br>
+And darling, this is more than anything I felt before<br>
+You're everything that I want<br>
+But I didn't think I'd find<br>
+Someone who was worth the wait<br>
+Of all the years of my heartbreak<br>
+But I know now I found the one I love
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13YdovVaqfem2BlYE5PllqmAih-xerxm2/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1tsPNv8uat5tS1ha3nSrTu3Zd1mQ6OCeX" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

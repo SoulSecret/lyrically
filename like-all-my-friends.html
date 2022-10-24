@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Francis Karel - Like all my Friends</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/lamf.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Like all my Friends</h2>
+    <p>Singer: Francis Karel</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Turn the music up<br>
+'Cause I don't wanna think<br>
+I don't wanna think about the room I'm in<br>
+If my eyes stay shut<br>
+Then I don't have to see<br>
+I don't have to see how everybody's<br>
+<br>
+[Pre-Chorus]<br>
+Got someone they're taking home<br>
+I don't wanna sound so cynical, but I<br>
+<br>
+[Chorus]<br>
+Wanna fall in love like all my friends<br>
+God, they look so happy<br>
+And I know I can be<br>
+I don't mind my empty bed<br>
+But sometimes I get lonely<br>
+Want someone to show me how to<br>
+Fix a fight, kiss good night, hold me tight<br>
+I wanna fall in love like all my friends<br>
+Fall in love like all my friends<br>
+<br>
+[Verse 2]<br>
+Not a jealous guy<br>
+But I got feeling too<br>
+I've got myself a missing puzzle piece<br>
+We all wanna find<br>
+Someone in our youth<br>
+Somebody who can make us feel like<br>
+<br>
+[Pre-Chorus]<br>
+Everybody's got someone<br>
+I'm not usually an optimist but I<br>
+<br>
+[Chorus]<br>
+Wanna fall in love like all my friends<br>
+God, they look so happy<br>
+And I know I can be<br>
+I don't mind my empty bed<br>
+But sometimes I get lonely<br>
+Want someone to show me how to<br>
+Fix a fight, kiss good night, hold me tight<br>
+I wanna fall in love like all my friends<br>
+Fall in love like all my friends<br>
+<br>
+[Bridge]<br>
+Ooh, ooh, fall in love like all my friends<br>
+Ooh, ooh, fall in love like all my friends<br>
+<br>
+[Chorus]<br>
+Wanna fall in love like all my friends, oh<br>
+And I don't mind my empty bed<br>
+But sometimes I get lonely<br>
+Want someone to show me how to<br>
+Fix a fight, kiss good night, hold me tight<br>
+I wanna fall in love like all my friends<br>
+Fall in love like all my friends
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/116WRS_c-O7tJ-bwXFp-PhcptoPPKcc6h/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1sgW74W764hlKUr9dpiAuqgqThH4a6we4" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

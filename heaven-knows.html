@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Orange & Lemons - Heaven Knows</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+													<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagerock/heaven-knows.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Heaven Knows</h2>
+    <p>Singer: Orange & Lemons</p>
+    <p class="track">Track 6 - Strike Whilst The Iron is Hot</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>There are times when I'm lying in my bed<br>
+Hug my pillow and cry from this tip again<br>
+And my eyes are like windshields on a rainy day<br>
+Almost rubbed down, swelling, as I keep on<br>
+Dipping my face in these cold hands of mine<br>
+Heaven knows how bitter I am<br>
+<br>
+[Chorus]<br>
+'Cause this angel has flown away from me<br>
+Leaving me in drunken misery<br>
+I should have clipped her wings and made her mine<br>
+For all eternity<br>
+Now this angel has flown away from me<br>
+Thought I had the strength to set her free<br>
+<br>
+Did what I did because I love her so<br>
+Will she ever find her way back home to me<br>
+Aah…<br>
+I'm so tired, I feel like catching forty winks<br>
+Being up all night in this elbow room<br>
+That puts me in a trance<br>
+Where hopes and dreams come true<br>
+Now my lips are burning and my eyes are hurting<br>
+From this fuse I mixed till I light another<br>
+Cigarette just to pass my time, oh<br>
+Heaven knows how bitter I am<br>
+<br>
+[Chorus]<br>
+'Cause this angel has flown away from me<br>
+Leaving me in drunken misery<br>
+I should have clipped her wings and made her mine<br>
+For all eternity<br>
+Now this angel has flown away from me<br>
+Thought I had the strength to set her free<br>
+Did what I did because I love her so<br>
+Will she ever find her way back home to me<br>
+Aah…
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/1261Cd-jn3IGBAhEPXvzmvAgIaAWq9ZOb/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1ma5blRbFo5CH1WyDo-EfX4qRwYc6jSmh" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  function audioEnded () {
+											document.getElementById("status").innerHTML="Audio End";
+											icon.src ="image/play.png"
+											}
+											mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

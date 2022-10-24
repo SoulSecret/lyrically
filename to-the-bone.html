@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Pamungkas - To The bone</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/bone.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>To The Bone</h2>
+    <p>Singer: Pamungkas</p>
+    <p class="track">Track 7 - Flying Solo</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Verse 1]<br>
+Have I ever told you<br>
+I want you to the bone<br>
+Have I ever called you<br>
+When you are all alone<br>
+And if I ever forget<br>
+To tell you how I feel<br>
+Listen to me now, babe<br>
+I want you to the bone<br>
+<br>
+[Pre-Chorus]<br>
+I want you to the bone, oh oh oh oh oh<br>
+I want you to the bone, oh oh oh oh oh<br>
+<br>
+[Verse 2]<br>
+Maybe if you can see<br>
+What I feel through my bone<br>
+Every corner in me<br>
+There's your presence that grown<br>
+Maybe I nurture it more<br>
+By saying how it feel<br>
+But I did mean it before<br>
+I want you to the bone<br>
+I want you to<br>
+<br>
+[Chorus]<br>
+Take me home, I’m fallin'<br>
+Love me long, I'm rollin’<br>
+Losing control, body and soul<br>
+Mind too for sure, I'm already yours<br>
+Walk you down, I'm all in<br>
+Hold you tight, you call and<br>
+I'll take control, body and soul<br>
+Mind too for sure, I'm already yours<br>
+<br>
+[Post-Chorus]<br>
+Would that be alright?<br>
+Hey, would that be alright?<br>
+I want you to the bone<br>
+So bad I can't breathe<br>
+I want you to the bone<br>
+<br>
+[Bridge]<br>
+Of all the ones that begged to stay<br>
+I'm still longing for you<br>
+Of all the ones that cried their way<br>
+I'm still waiting on you<br>
+Maybe we seek for something that<br>
+We couldn’t ever have<br>
+Maybe we choose the only love<br>
+We know we won’t accept<br>
+Or maybe we're taking all the risks<br>
+For something that is real<br>
+’Cause maybe the greatest love of all<br>
+Is who the eyes can't see, yeah<br>
+<br>
+[Instrumental]<br>
+<br>
+[Chorus]<br>
+Take me home, I'm fallin'<br>
+Love me long, I’m rollin'<br>
+Losing control, body and soul<br>
+Mind too for sure, I'm already yours<br>
+Walk you down, I'm all in<br>
+Hold you tight, I call and<br>
+I'll take control of you, body and soul<br>
+Mind too for sure, I'm already yours, oh oh<br>
+Oh yeah<br>
+<br>
+[Outro]<br>
+(Would you just take me home?)<br>
+(Would you just love me long?)<br>
+(Or should I keep hoping on?)<br>
+(Should I keep hoping on?)<br>
+(Could I just take you home?)<br>
+(Could I just love you long?)<br>
+(Or should I keep hoping on?)<br>
+(Should I keep hoping on?)<br>
+See, I want you to the bone, yeah<br>
+I want you to the bone, oh<br>
+I want you to the bone, yeah<br>
+I want you to the bone<br>
+I want you to the bone
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13y0sUYK0UhPg3afffKgjhdneUDVt_1iR/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1oUhxFCsY64K0XiKKv490wXU8jD1YilTu" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

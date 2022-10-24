@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Sam Concepcion - Diwata</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+												
+												
+								
+										
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagephtophits/diwata.webp" >
+        </div>  
+    <div class="music-info">
+    <h2>Diwata</h2>
+    <p>Singer: Sam Concepcion</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Verse 1]<br>
+Shawty, I've been feeling lonely<br>
+Memories of 2019<br>
+On the beach and we vibin'<br>
+Cold ones on hand we excited<br>
+Good trips, sailing sabin<br>
+It's me you in the horizon<br>
+I've been talking 'bout life and I'm locked in<br>
+Great curls soft skin and she glowing<br>
+<br>
+[Verse 2]<br>
+No, she don't want commitment<br>
+But we both down just to ride with the moment<br>
+Craving for the one but you keep your distance<br>
+She only be close when it comes to the limit<br>
+But I've been saying yes 'cause man she a 10<br>
+Aight convos in the same wavelength<br>
+I don't need money, man, I don't need cash<br>
+Thе only thing I need is a shawty real bad<br>
+<br>
+[Chorus]<br>
+Oh, diwatang kay ganda<br>
+Mahiwagang mahika<br>
+Sa'kin hulog ng langit<br>
+Oh, diwatang kay ganda<br>
+Mahiwagang mahika<br>
+Sa'kin napapaibig<br>
+Kahit sa'n pa dalhin, araw man o gabi<br>
+Diwata, oh kay gandang diwata, oh<br>
+Kahit sa'n pa dalhin, araw man o gabi<br>
+Diwata, oh kay gandang diwata, oh<br>
+<br>
+[Verse 3]<br>
+Check my phone, young boy got a tеxt<br>
+Twelve AM all alone, what's next?<br>
+Found my keys and I hit the gas<br>
+In an hour I'll be up for the task (Uhh)<br>
+Like a blast from the past<br>
+I ain't confused but girl I'm attached<br>
+This is not good my heart beating fast<br>
+Will this thing we have really last<br>
+<br>
+[Verse 4]<br>
+I don't know yet but I'm craving for you<br>
+'Cause this feels so true<br>
+If there's heaven on earth, baby girl, I'll fill it with you<br>
+I really wanna beg you, boo<br>
+Wine is best enjoyed with a glass for two<br>
+Please, tell me baby do you feel it too?<br>
+Is it mutual or we just comfortable (I don't know)<br>
+<br>
+[Chorus]
+Oh, diwatang kay ganda<br>
+Mahiwagang mahika<br>
+Sa'kin hulog ng langit (Ng langit)<br>
+Oh, diwatang kay ganda<br>
+Mahiwagang mahika<br>
+Sa'kin napapaibig (Oh-oh)<br>
+Kahit sa'n pa dalhin, araw man o gabi<br>
+Diwata, oh kay gandang diwata, oh<br>
+Kahit sa'n pa dalhin, araw man o gabi<br>
+Diwata, oh kay gandang diwata, oh<br>
+<br>
+[Bridge]<br>
+Lately, baby<br>
+I've been going crazy when you don't pretend<br>
+When you don't pretend<br>
+Lately, baby<br>
+I've been going crazy when you don't pretend<br>
+When you don't pretend<br>
+<br>
+[Chorus]<br>
+Oh, diwatang kay ganda<br>
+Mahiwagang mahika (Mahiwaga)<br>
+Sa'kin hulog ng langit (Hulog ng langit)<br>
+Oh, diwatang kay ganda (Kay ganda)<br>
+Mahiwagang mahika<br>
+Sa'kin napapaibig<br>
+Kahit sa'n pa dalhin, araw man o gabi<br>
+Diwata, oh kay gandang diwata, oh<br>
+Kahit sa'n pa dalhin, araw man o gabi<br>
+Diwata, oh kay gandang diwata, oh
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://www.youtube.com/embed/iiGaMNcrNN4?rel=0" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://drive.google.com/uc?export=download&id=1dw0CDDkDoFeTE-d-xbdTOtffZiLstSiU" type="audio/mp3">
+								</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

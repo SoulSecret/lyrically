@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | The Juans - Pag-ibig Lang</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+							<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>	
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageworship/pag-ibig-lang.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Pag-ibig</h2>
+    <p>Singer: The Juans</p>
+    </div>
+				</div>
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>Hindi na alam ang gagawin<br>
+Kakapit na ba ako sa patalim<br>
+Kailan ba matatapos ang dilim<br>
+Minsa'y parang nakakapagod na<br>
+<br>
+Hanggang kailan ko dadalhin<br>
+O kay bigat nitong aking pasanin<br>
+Mayro'n bang nakikinig sa aking panalangin<br>
+Mayro'n ba sa 'ki'y nagmamahal<br>
+<br>
+Pero 'di ibig sabihin na ako'y susuko<br>
+Pag-ibig ang aking sandata<br>
+<br>
+Ako'y mangangarap<br>
+Magtitiwala<br>
+Hanggang ang lahat<br>
+Ay makakita<br>
+Na mayro'ng liwanag<br>
+At mayro'ng pag-asa<br>
+Pag-ibig lamang<br>
+Aking kakapitan<br>
+Pag-ibig lang<br>
+Pag-ibig lang<br>
+<br>
+Lahat ay aking kakayanin<br>
+Hirap man o sakit, kayang tiisin<br>
+Pasasaan ba't matatapos din ang dilim<br>
+Gagaan din ang pakiramdam<br>
+<br>
+At dahil sa 'yo ako'y hinding-hindi susuko<br>
+Pag-ibig ang aking sandata<br>
+<br>
+Ako'y mangangarap<br>
+Magtitiwala<br>
+Hanggang ang lahat<br>
+Ay makakita<br>
+Na mayro'ng liwanag<br>
+At mayro'ng pag-asa<br>
+Pag-ibig lamang<br>
+Aking kakapitan<br>
+Pag-ibig lang<br>
+Pag-ibig lang<br>
+<br>
+Pag-ibig lang<br>
+Pag-ibig lang<br>
+Pag-ibig lang<br>
+Pag-ibig lang<br>
+Pag-ibig lang<br>
+Pag-ibig lang<br>
+<br>
+Ako'y mangangarap<br>
+Magtitiwala<br>
+Hanggang ang lahat<br>
+Ay makakita<br>
+Na mayro'ng liwanag<br>
+At mayro'ng pag-asa<br>
+Pag-ibig lamang<br>
+Aking kakapitan<br>
+Pag-ibig lang<br>
+Pag-ibig lang<br>
+Pag-ibig lang
+            </p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/14eTMjNf74Gjx837UM089gnuKDhjtnHg9/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1qpbmAQ1gpxbPBkPvIkqjRvm5vsVeerau" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+							<script src="search.js"></script>	
+				</body>
+				
+</html>

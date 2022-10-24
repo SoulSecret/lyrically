@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | The Chongkeys - Tignan Mo</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagereggae/tignanmo.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Tignan Mo</h2>
+    <p>Singer: The Chongkeys</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>Bakit ang mga madre sister ang tawag<br>
+Bakit ang mga pari father ang tawag<br>
+Bakit yung ibang mga teacher maam sir ang tawag<br>
+Bakit tawag sa banda ay kakaiba hindi maganda<br>
+<br>
+Kami raw ay mga<br>
+Adik manyak mga gago siraulo<br>
+Mga adik mga manyak mga gago siraulo<br>
+Magulo maingay walang asenso walang pera<br>
+Magulo maingay walang asenso walang pera<br>
+Baduy<br>
+<br>
+Bakit yung ibang mga pulis buhaya ang tawag<br>
+Bakit ang mga artista plastikan ng plastikan sa amigo at amiga<br>
+E bakit yung ating gobyerno kurakot ng kurakot sa pera ng bayan<br>
+Bakit tawag sa banda ay kakaiba hindi maganda<br>
+<br>
+Kami raw ay mga<br>
+Adik manyak mga gago siraulo<br>
+Mga adik mga manyak mga gago siraulo<br>
+Magulo maingay walang asenso walang kita<br>
+Magulo maingay walang asenso walang kita<br>
+Baduy<br>
+<br>
+Bakit ikaw kayo (kayo)<br>
+Tingnan nyo muna sarili nyo (tignan nyo muna)<br>
+Bakit ikaw sila (sila)<br>
+Tingnan na muna sarili nila<br>
+Anong nakikita mo anong nakikita nyo<br>
+Totoo ka ba totoo ka ba<br>
+Ang chongkeys may sasabihin<br>
+<br>
+Wag nyong husgahan wag pintasan sarili mo'y tingnan<br>
+Maging totoo sa sarili sa sinasabi<br>
+Hindi lang labas ang totoong kaanyohan<br>
+Respeto bigay ko respeto bigay nyo<br>
+<br>
+Wag nyong husgahan wag pintasan sarili mo'y tingnan<br>
+Maging totoo sa sarili sa sinasabi<br>
+Hindi lang labas ang totoong kaanyohan<br>
+Respeto bigay ko respeto bigay nyo wag nyong husgahan<br>
+<br>
+Tingnan mo pakinggan nyo nasa puso ko nasa isip ko<br>
+(wag nyong husgahan wag pintasan wag nyong husgahan wag pintasan)<br>
+Tingnan mo pakinggan nyo nasa puso ko nasa isip ko<br>
+(wag nyong husgahan wag pintasan)<br>
+Pakinggan mo
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12LPKXlnDrRR7BZyTwu5Op-eluvIMX-K-/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1tZ3NvJaqMq8ORX84bLLallGtwaBWo8qT" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+							<script src="search.js"></script>	
+				</body>
+				
+</html>

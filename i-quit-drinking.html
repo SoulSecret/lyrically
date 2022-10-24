@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Lany & Kelsea Ballerini - I Quit Drinking</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/drinking.png">
+        </div>  
+    <div class="music-info">
+    <h2>I Quit Drinking</h2>
+    <p>Singer: Lany & Kelsea Ballerini</p>
+    <p class="track">Track 20 - gg bb xx (deluxe)</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+We used to be the life of the party<br>
+Body to body, dance the night away<br>
+Shoot tequila straight<br>
+Obsessed with each other<br>
+And down for another round until last call<br>
+Wasn't alcohol<br>
+<br>
+[Pre-Chorus]<br>
+Keeping us up 'til the sun came around<br>
+Thought we'd stay drunk forever but now<br>
+<br>
+[Chorus]<br>
+You're the reason there's no whiskey anywhere inside this house<br>
+You're the reason all my friends know I don't go downtown<br>
+You're the reason I hate champagne, never used to turn it down<br>
+You're thе only thing I want when one drop hits my mouth<br>
+Baby, you're thе reason I quit drinking<br>
+<br>
+[Verse 2]<br>
+We used to be dizzy all morning<br>
+Hungover, pouring cups of coffee black<br>
+Kiss and crawl right back<br>
+Under the covers and down for another<br>
+Hour in that bed, now I'm here instead<br>
+<br>
+[Pre-Chorus]<br>
+Waking up sober, it feels kinda nice<br>
+Except that I can't sleep at night<br>
+<br>
+[Chorus]<br>
+You're the reason there's no whiskey anywhere inside this house<br>
+You're the reason all my friends know I don't go downtown<br>
+You're the reason I hate champagne, never used to turn it down<br>
+You're the only thing I want when one drop hits my mouth<br>
+Baby, you're the reason I quit drinking<br>
+<br>
+[Bridge]<br>
+I quit thinking (I quit thinking), staring at the ceiling (Oh, oh)<br>
+And all my cabernet is down the kitchen sink and<br>
+(It's down the kitchen sink, yeah)<br>
+I quit mixing (I quit mixing), all my drinks and feelings<br>
+It's not fixing that you're gone<br>
+<br>
+[Chorus]<br>
+You're the reason there's no whiskey anywhere inside this house<br>
+You're the reason all my friends know I don't go downtown<br>
+You're the reason I hate champagne, never used to turn it down<br>
+You're the only thing I want when one drop hits my mouth<br>
+(The only thing I want, baby)<br>
+Baby, you're the reason (Oh, oh)<br>
+You're the reason, I quit drinking
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13ZYYD3WUu6JH0EC3NeuNdpr35gEJ7iHG/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1u-37wsl0P4W1vvLN8_ejUc-xwn07_HnI" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

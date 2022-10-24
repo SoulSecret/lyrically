@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | December Avenue - Kahit Di Mo Alam</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageopm/dimoalam.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Kahit Di Mo Alam</h2>
+    <p>Singer: December Avenue</p>
+    <p class="track">Track 9 - Langit Mong Bughaw</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Ipikit mo man ang iyong mata<br>
+'Di pa rin naman mag-iiba<br>
+Nabalutan ng poot ang puso mo<br>
+Tila malimit kang ngumiti ngayon<br>
+'Di ka rin naman ganyan noon<br>
+Naubusan ng tibok ang puso mo<br>
+<br>
+[Pre-Chorus]<br>
+Kulang na ba ang mga ulap<br>
+Sa langit at buwan?<br>
+'Di ka na babalik sa lilim ng ulan<br>
+<br>
+[Chorus]<br>
+Sa bawat saglit<br>
+Handang masaktan<br>
+Kahit 'di mo alam<br>
+Subukan muli<br>
+At pagbigyan<br>
+Ang ating nakaraan<br>
+Kahit 'di mo na alam<br>
+<br>
+[Verse 2]<br>
+Ipikit mo na ang iyong mata<br>
+Ang nakaraa'y limutin na<br>
+Umaasang 'di ka na mawawala<br>
+Sadyang mahirap lang ngumiti ngayon<br>
+Minahal kita mula noon<br>
+Ibalik na ang tibok ng puso mo<br>
+<br>
+[Pre-Chorus]<br>
+Kulang na ba ang mga ulap<br>
+Sa langit at buwan?<br>
+'Di ka na babalik sa lilim ng ulan<br>
+<br>
+[Chorus]<br>
+Sa bawat saglit<br>
+Handang masaktan<br>
+Kahit 'di mo alam<br>
+Subukan muli<br>
+At pagbigyan<br>
+Ang ating nakaraan<br>
+Kahit 'di mo na alam<br>
+<br>
+[Bridge]<br>
+Kahit 'di mo na alam<br>
+Kahit 'di mo na...<br>
+<br>
+[Chorus]<br>
+Sa bawat saglit<br>
+Handang masaktan<br>
+Kahit 'di mo alam<br>
+Subukan muli<br>
+At pagbigyan<br>
+Ang ating nakaraan<br>
+Kahit 'di mo na alam<br>
+<br>
+[Outro]<br>
+Kahit 'di mo na alam<br>
+Kahit 'di mo na alam<br>
+Kahit 'di mo na<br>
+Kahit 'di mo na<br>
+Kahit 'di mo na alam
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/10cyaUWZORN1sJ-ORxa838rd2EBq2kf0h/preview" frameborder="0"></iframe>
+							</div>
+							</body>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1hZ6V_inSdSY6hm2F05DYvwjHhrjIiLUL" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

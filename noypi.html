@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Bamboo - Noypi</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagerock/noypi.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Noypi</h2>
+    <p>Singer: Bamboo</p>
+    <p class="track">Track 10 - As the Music Plays</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Tingnan mo iyong palad<br>
+Kalyado mong kamay sa hirap ng buhay<br>
+Ang dami mong problema, nakuha mo pang ngumiti<br>
+Noypi ka nga, astig<br>
+<br>
+[Refrain 1]<br>
+Saan ka man naroroon 'wag kang matatakot<br>
+Sa baril o patalim, sa bakas na madilim<br>
+<br>
+[Chorus]<br>
+Hoy, Pinoy ako<br>
+Buo aking loob<br>
+May agimat ang dugo ko<br>
+Hoy, oh, Pinoy ako<br>
+May agimat ang dugo ko<br>
+<br>
+[Verse 2]<br>
+Sinisid ko ang dagat, nalibot ko ang mundo<br>
+Nasa puso ko pala hinahanap kong kulo<br>
+Ilang beses na akong muntikang mamatay<br>
+Oh, alam ko ang sikreto kaya't nandito pa't buhay<br>
+<br>
+[Refrain 2]<br>
+Oh, sabi nila may anting-anting ako<br>
+Pero 'di nila alam na ang Diyos ang dahilan ko<br>
+<br>
+[Chorus]<br>
+Hoy, Pinoy ako<br>
+Buo aking loob<br>
+May agimat ang dugo ko<br>
+Hoy, oh, Pinoy ako<br>
+May agimat ang dugo ko<br>
+<br>
+[Post-Chorus]<br>
+Hoh-hoh-hoo-hoh...<br>
+Hoh-hoh-hoo-hoh...<br>
+<br>
+[Instrumental Bridge]<br>
+<br>
+[Breakdown]<br>
+Dinig mo ba ang bulong ng lahi mo<br>
+Isigaw mo, kapatid, ang himig natin<br>
+<br>
+[Chorus]<br>
+Hoy, Pinoy ako<br>
+Buo aking loob<br>
+May agimat ang dugo ko<br>
+Hoy, oh, Pinoy ako<br>
+May agimat ang dugo ko<br>
+<br>
+[Post-Chorus]<br>
+Hoh-hoh-hoo-hoh...<br>
+Hoh-hoh-hoo-hoh...
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11uQvNbzTrQoGbcPfEG5XNj2qTBHgXZAM/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1sy8UoEAWdf53R5JJEMti7IZ0Eq3bQGeL" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+							<script src="search.js"></script>	
+				</body>
+				
+</html>

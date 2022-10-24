@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Arthur Nery - Isa Lang</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+												
+												
+								
+										
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagephtophits/isalang.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Isa Lang</h2>
+    <p>Singer: Arthur Nery</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Intro]<br>
+Mmm, whoa-oh-oh, oh-oh-oh-oh-oh<br>
+Oh-oh-oh-oh, oh-oh, <br>
+<br>
+[Verse 1]<br>
+Pag-usapan muna natin ang iyong gabi<br>
+Ikaw ang pahinga ko, mahal<br>
+Lumiliwanag aking ngiti kapag kausap na kita pasensya lang kung<br>
+<br>
+[Pre-Chorus]<br>
+Babalik pa rin sa atin<br>
+Kahit 'di mo 'ko hanapin<br>
+Magpapaalipin lang sa'yo<br>
+Pinapawi mo ang uhaw ng aking puso<br>
+Oh, sabik sa lalim ng pagtingin mo para sa'kin<br>
+'Pag napansin mo na ako<br>
+Ipapaunawa ko agad sa'yo na<br>
+<br>
+[Chorus]<br>
+Isa lang, isa lang<br>
+Ang hinahanap ko, hanap ko<br>
+Ikaw ra man, ikaw ra man<br>
+Kung papalarin na<br>
+Mapapasakin ba?<br>
+<br>
+[Verse 2]<br>
+Kung saan-saan man magtungo 'di alam kung ba't sa puso<br>
+Pangalan mo lang ang tanging laman<br>
+Hindi alam kung ba't mas sinusunod mo pa ang iyong mga tala<br>
+At 'di ang nararamdaman sa akin ngunit<br>
+<br>
+[Pre-Chorus]<br>
+Babalik pa rin sa atin<br>
+Kahit 'di mo 'ko hanapin<br>
+Magpapaalipin lang sa'yo<br>
+Pinapawi mo ang uhaw ng aking puso<br>
+Oh, sabik sa lalim ng pagtingin mo para sa'kin<br>
+'Pag napansin mo na ako<br>
+Ipapaunawa ko agad sa'yo na<br>
+<br>
+[Chorus]<br>
+Isa lang, isa lang<br>
+Ang hinahanap ko, hanap ko<br>
+Ikaw ra man, ikaw ra man<br>
+Kung papalarin na<br>
+Mapapasakin ba?<br>
+<br>
+[Bridge]<br>
+Kung mang-aakit, akit ka na naman<br>
+Pwede bang sa akin, akin lang?<br>
+Kung mang-aakit, akit ka na naman
+Pwede bang sa akin, akin lang?<br>
+Kung mang-aakit, akit ka na naman<br>
+Pwede bang sa akin, akin lang?<br>
+<br>
+[Chorus]<br>
+Isa lang, isa lang<br>
+Ang hinahanap ko, hanap ko<br>
+Ikaw ra man, ikaw ra man<br>
+Kung papalarin na<br>
+Mapapasakin ba?</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/1zr6YOINS2udtLWdN6N8DdWCs9hC0oYMb/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+								<audio src="https://drive.google.com/uc?export=download&id=1eruOuDs33_wI0iokO6m0TNczPngr08NL" id="mySong">
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

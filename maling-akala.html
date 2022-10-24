@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Brownman Revival - Maling Akala</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagereggae/malingakala.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Maling Akala</h2>
+    <p>Singer: Brownman Revival</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>May mga kumakalat na balita<br>
+Na ang misis ni kuwan ay madaling makuha<br>
+Bago maniwala, mag-isip-isip ka muna<br>
+Marami ang namamatay sa maling akala<br>
+<br>
+Nung ako'y musmos pa lamang ay takot sa multo<br>
+Nung ako'y naging binata, sa erpat ng syota ko<br>
+Ngayon ay may asawa, meron nang pamilya<br>
+Wala ngang multo ngunit takot sa asawa ko<br>
+<br>
+[Refrain]<br>
+Di mo na kailangan mag-alinlangan<br>
+Kung tama ang gagawin mo<br>
+Basta't huwag kalimutang magdahan-dahan<br>
+Kung di sigurado sa kalalabasan<br>
+Kalalabasan ng binabalak mo<br>
+<br>
+[Chorus]<br>
+Maliit na butas lumalaki<br>
+Konting gusot, dumadami (gumagrabe)<br>
+Hindi mo ma-ibabaon sa limot at bahala<br>
+Kapag nabulag ka hah...<br>
+Ng maling akala<br>
+<br>
+Nasaan na ba ako, kaninong kama 'to?<br>
+Ilang ulit na bang nagigising sa ibang kwarto<br>
+Naglayas sa bahay, akala'y madali ang buhay<br>
+Ngayon ay nagsisisi dahil di nakapagtapos<br>
+<br>
+[Repeat refrain]<br>
+<br>
+[Repeat chorus except last line]<br>
+<br>
+May mga kumakalat na balita<br>
+Na ang kaligtasa'y madaling makuha<br>
+Bago maniwala mag-isip-isip ka muna<br>
+Marami ang namamatay ahh...<br>
+Sa maling akala<br>
+<br>
+Sa maling akala... (Oh yeah)<br>
+Sa maling akala<br>
+<br>
+Maliit na butas lumalaki (sa maling akala)<br>
+Konting gusot, dumadami<br>
+Maliit na butas lumalaki<br>
+Konting gusot, gumagrabe{repeat 2x]<br>
+Hindi mo ma-ibabaon sa limot at bahala<br>
+Kapag nabulag ka hah...<br>
+Ng maling akala...
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12hMDYFEeaTbvW1isOD5QsOb3nKgIMaG_/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1ncctYeHXes0tIxaLUSEakpb7kYaAur5-" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

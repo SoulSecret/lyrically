@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Adie - Paraluman</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageopm/paraluman.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Paraluman</h2>
+    <p>Singer: Adie</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+<p>[Verse 1]<br>
+Sa unang tingin agad na nahumaling<br>
+Sa nagniningning mong mga mata<br>
+Ika’y isang bituwin na nagmula sa langit<br>
+Hindi ko mawari<br>
+Ang taglay mong tinatangi<br>
+Sadya namang, nakakabighani<br>
+'Di maipaliwanag ang nararamdaman (Ooh)<br>
+<br>
+[Pre-Chorus]<br>
+Namumukadkad ang aking ligaya<br>
+Sa tuwing ika’y papalapit na<br>
+Hawakan mo ang aking kamay<br>
+<br>
+[Chorus]<br>
+O Paraluman<br>
+Ika’y akin nang<br>
+Dadalhin sa<br>
+'Di mo inaasahang<br>
+Paraiso (Hoo hoo)<br>
+Palagi kitang<br>
+Aawitan ng kundiman<br>
+'Di magsasawa<br>
+'Di ka pababayaan<br>
+Isasayaw kita<br>
+Hanggang sa walang hanggan<br>
+(Hoo hoo, hoo hoo)<br>
+<br>
+[Verse 2]<br>
+Mga gunita na laging naiisip (Naiisip)<br>
+Sumisilip (Sumisilip)<br>
+Ang itinakda ng mahiwagang<br>
+Liwanag na dulot mo<br>
+Nagbigay-sinag sa madilim kong mundo<br>
+Ibang iba ako<br>
+Kapag ikaw na ang kapiling<br>
+Sumisiping ang buwan at mga bituwin<br>
+Na para bang sumasang-ayon sa atin<br>
+Ang kalawakan (Kalawakan)<br>
+<br>
+[Pre-Chorus]<br>
+Namumukadkad ang aking ligaya<br>
+Sa tuwing ika’y papalapit na<br>
+Hawakan mo ang aking kamay (Hoo hoo)<br>
+<br>
+[Chorus]<br>
+O Paraluman<br>
+Ika’y akin nang<br>
+Dadalhin sa<br>
+'Di mo inaasahang<br>
+Paraiso (Paraiso) (Hoo hoo)<br>
+Palagi kitang<br>
+Aawitan ng kundiman<br>
+'Di magsasawa<br>
+'Di ka pababayaan<br>
+Isasayaw kita<br>
+Hanggang sa walang hanggan<br>
+(Hoo hoo, hoo hoo)<br>
+<br>
+[Post-Chorus]<br>
+O papaparapapa (Hoo hoo, hoo hoo)<br>
+Parapapaparaparaluman (Hoo hoo, hoo hoo)<br>
+Parapapaparaparaluman (Hoo hoo, hoo hoo)<br>
+Parapapaparaparaluman (Hoo hoo, hoo hoo)<br>
+Parapapaparaparaluman<br>
+<br>
+[Bridge]<br>
+Himig ng tadhana<br>
+Sa atin ay tumutugma na (Tumutugma na)<br>
+Himig ng tadhana<br>
+Sa atin ay tumutugma na (Tumutugma na)
+Himig ng tadhana<br>
+Sa atin ay tumutugma na<br>
+(Hoo hoo, hoo hoo)<br>
+(Hoo hoo, hoo hoo)<br>
+(Hoo hoo, hoo hoo)<br>
+<br>
+[Chorus]<br>
+O Paraluman<br>
+Ika’y akin nang<br>
+Dadalhin sa<br>
+'Di mo inaasahang<br>
+Paraiso<br>
+Palagi kitang<br>
+Aawitan ng kundiman<br>
+'Di magsasawa<br>
+'Di ka pababayaan<br>
+Isasayaw kita<br>
+Mamahalin kita<br>
+Hanggang sa walang hanggan<br>
+(Hoo hoo, hoo hoo)<br>
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/10DmRbKDKbtdkRNXftNPsqaK6G0KmpW85/preview" frameborder="0"></iframe>
+							</div>
+<audio id="mySong">
+				<source src="https://drive.google.com/uc?export=download&id=1eC5LUVWiI5UapsLOTD0e_EWAu3lPq1CU" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

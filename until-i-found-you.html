@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Stephen Sanchez - Until i Found You</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagephtophits/uify.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Until i Found You</h2>
+    <p>Singer: Stephen Sanchez</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Georgia, Wrap me up in all your...<br>
+I want ya', In my arms<br>
+Oh, let me hold ya'<br>
+I'll never let you go again, like I did<br>
+Oh I used to say<br>
+<br>
+[Chorus]<br>
+"I would never fall in love again until I found her"<br>
+I said, "I would never fall unless it's you I fall into"<br>
+I was lost within the darkness, but then I found her<br>
+I found you<br>
+<br>
+[Verse 2]<br>
+Georgia, Pulled me in, I asked to...<br>
+Love her, once again<br>
+You fell, I caught ya'<br>
+I'll never let you go again, like I did<br>
+Oh I used to say<br>
+<br>
+[Chorus: Stephen Sanchez and Georgia]<br>
+"I would never fall in love again until I found her"<br>
+I said, "I would never fall unless it's you I fall into"<br>
+I was lost within the darkness, but then I found her<br>
+I found you<br>
+<br>
+[Guitar Solo]<br>
+<br>
+[Chorus]<br>
+"I would never fall in love again until I found her"<br>
+I said, "I would never fall unless it's you I fall into"<br>
+I was lost within the darkness, but then I found her<br>
+I found you
+								</p>
+							</div>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1rmmKyaXCfWaHv8IMNYu3HSvmD0GE59cA" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

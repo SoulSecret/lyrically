@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Emman - Kung Pwede Lang</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+							<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>	
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/kungpwedelang.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Kung Pwede Lang</h2>
+    <p>Singer: Emman</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>Di na kita nararamdaman<br>
+Totoo bang nandiyan ka lang o sinabi mo lang?<br>
+Para nga naman gumaan mararamdaman ko sa 'yo<br>
+Umasa akong masasagutan<br>
+Katanungan, gumugulo sa kaisipan<br>
+Sino na ang kakapitan at sasandalan ko ngayon?<br>
+<br>
+Ngayon, ikaw ay nandito pero alam ko<br>
+Mamaya-maya lang, aalis ka na rito<br>
+Pahiram naman ako ng oras mo<br>
+Pasilip naman ako sa iyong mundo<br>
+Pahingi naman ako ng yakap mo<br>
+(Ipaalam mo sa 'kin ang iyong gusto)<br>
+Pahingi naman ako ng yakap mo<br>
+(Kailangan kong malaman, 'tutuloy pa ba 'to kasi)<br>
+<br>
+'La na 'kong nararamdaman<br>
+Iba na rin kung pa'no mo 'ko tingnan<br>
+Sabi mo ay nandiyan ka lang<br>
+Kung pwede lang, magparamdam ka naman (Kung pwede lang)<br>
+<br>
+Kung pwede lang sabihin sa 'kin, ayaw mo na<br>
+'Wag na rin natin hayaan mapunta pa<br>
+Sa 'di natin gusto, ayoko maglaro<br>
+Sayang pawis ko, paghabol sa 'yo<br>
+Pero kung gusto mong masalba pa<br>
+Sabihin mo lang sa 'kin, ako na ang taya<br>
+'Di madali pero magmamadali<br>
+Sulit sa 'kin bawat patak ng sandali<br>
+<br>
+Ikaw ay nandito pero alam ko<br>
+Mamaya-maya lang, ako na lang ulit 'to<br>
+Palimos naman ng oras mo<br>
+Pasiksik naman sa 'yong mundo<br>
+Pahingi naman ako ng yakap mo<br>
+(Ipaalam mo sa 'kin ang iyong gusto)<br>
+Pahingi naman ako ng yakap mo<br>
+(Kailangan kong malaman, 'tutuloy pa ba 'to kasi)<br>
+<br>
+'La na 'kong nararamdaman<br>
+Iba na rin kung pa'no mo 'ko tingnan<br>
+Sabi mo ay nandiyan ka lang<br>
+Kung pwede lang, magparamdam ka naman (Kung pwede lang)<br>
+Kung pwede lang Kung pwede lang<br>
+Kung pwede lang Kung pwede lang<br>
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11FGAByaU6O-nGk3yt5yHCJ7IT9NIiSXP/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1gwviLqIsgZ_3Xg_g2vq8Bg6PsmW4mp7-" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+					<script src="search.js"></script>			
+				</body>
+				
+</html>

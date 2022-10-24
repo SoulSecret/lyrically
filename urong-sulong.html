@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Alisson Shore - Urong Sulong</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/urong-sulong.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Urong Sulong</h2>
+    <p>Singer: Alisson Shore ft.Kiyo</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Intro]<br>
+You are the one!<br>
+Alisson!<br>
+<br>
+[Chorus]<br>
+Bakit ba kung kailan kaya'y naisip na<br>
+Bibitawan, ikaw 'yung paraiso, 'di ba<br>
+'Wag ka nang mag-alinlangan sa'tin<br>
+'Di ka iiwanan ikaw 'yung tahanan, 'di ba ('Di ba)<br>
+Kahit sa'n man tayo magpunta<br>
+Tinadhanang magkikita ('Di ba)<br>
+Kung ang oras man ay humadlang pipiliting balikan<br>
+<br>
+[Verse 1]<br>
+Alas dose ng gabi, dilat pa din ating mata<br>
+Kahit hindi magkatabi, kahagkan pa din kita<br>
+Sulyap ko, mga ngiti mo magmula sa kabila<br>
+Ramdam ko din ang takot dahil ikaw ay nagdududa<br>
+Kung sigurado ka ba sa'kin, kung dapat bang ikaw ay maging akin<br>
+At lahat ay isugal sa 'di tiyak na tatahakin mong landas<br>
+Iniisip na lahat ng 'to ay matatapos at biglaan na lang kukupas<br>
+Pagdating ng panahon, aakalain ay ikukulong sa kahon<br>
+Iiwanan 'pag nagkaroon ng pagkakataon<br>
+Kahit problema'y mala-ambon lang, aba mali ka kung gano'n<br>
+Hinding-hindi ko sa iyo magagawa iyon<br>
+Kaya sa'kin na lang itugon ang pansin<br>
+Pagtingin ko sa'yo ay walang kahambing<br>
+
+[Chorus]<br>
+Bakit ba kung kailan kaya'y naisip na<br>
+Bibitawan, ikaw 'yung paraiso, 'di ba<br>
+'Wag ka nang mag-alinlangan sa'tin<br>
+'Di ka iiwanan ikaw 'yung tahanan, 'di ba<br>
+<br>
+[Verse 2]<br>
+'Di ka pinipilit maniwala pero alam ko ramdam mo<br>
+'Di ba, tama, tamang hinala kapag kasama<br>
+Oo, kakaiba mga gulo sa isip mo'y 'di alintana<br>
+Kaya 'wag mababahala na sumama sa'kin<br>
+Sabay ka lang sa byahe, 'wag kang bababa<br>
+Sa'kin magtiwala ka, matakot man gano'n lang talaga<br>
+Sasaluhin kita, dadalhin kita, ipapasan ka sa likod<br>
+Kapag napagod ang paa<br>
+<br>
+[Bridge]<br>
+Hhindi ka mananalo, kung hindi ka susugal sa laro ng puso<br>
+At lalong hindi kita sasalubungin para lang sumalungat<br>
+At iwan kang mag-isa sa mundong mapaglaro<br>
+Alam ko na gusto mo din kaya 'wag kang magbibiro<br>
+Malilito, dahil tunay ang pag-ibig ko<br>
+<br>
+[Outro]<br>
+Kahit sa'n man tayo magpunta<br>
+Tinadhanang magkikita ('Di ba)<br>
+Kung ang oras man ay humadlang pipiliting balikan ('Di ba)<br>
+Kahit sa'n man ako magpunta<br>
+Tinadhanang magkikita ('Di ba)<br>
+Kung ang oras man ay humadlang pipiliting balikan
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11QzAU0INU2gRIFdHXOFzrI38nIz2u-2J/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1jt9wdDKB2DQzl7AqImgEDWRKbWTQH1iR" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

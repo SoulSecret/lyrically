@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Asin - Usok</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagereggae/usok.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Usok</h2>
+    <p>Singer: Asin </p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>Isip mo'y unti-unting<br>
+Nawawala't nalilito<br>
+Ang tulad mo'y parang usok<br>
+Unti-unting naglalaho<br>
+Tanging hiling ko lang sa 'yo<br>
+Nakaraan ay tanggapin<br>
+At ang ngayon ay harapin<br>
+Ang bukas mo'y darating pa<br>
+<br>
+Kaya't huwag sanang damdamin<br>
+'Pagkat ito'y payo lamang<br>
+Mula sa akin, kaibigan<br>
+Na sa iyo'y nagmamahal<br>
+<br>
+Huwag mong sayangin ang panahon<br>
+'Pagkat ito'y may hangganan<br>
+Buksan mo ang pintuan<br>
+Kasama ng iyong puso<br>
+<br>
+CHORUS<br>
+Tinangay na ng hangin<br>
+Ang masamang panaginip<br>
+Kaya't bigyan mo ng puwang<br>
+Ang puso mong nalulumbay<br>
+<br>
+AD LIB<br>
+<br>
+[Repeat 3rd & 4th Stanzas]<br>
+<br>
+[Repeat Chorus]<br>
+[Repeat 1st Stanza]<br>
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12cIOBA_omHMqsuAV-4iIP46QXfb_fWBE/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1nWzUt9O5hk4_fI8GVgq-q5TE2wCx46wR" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

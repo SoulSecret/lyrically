@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');  
+ *{  
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;  
+ }  
+
+.container{
+				width: 100%; 
+				height: 100vh;
+		   padding: 0 5%;
+				box-sizing: border-box;
+				overflow-x: hidden;
+				background-image: linear-gradient(#4B5EE8,#000000);
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.container::-webkit-scrollbar-thumb{ 
+	background: rgba(184, 184, 184, .9);
+	border-radius: 20px;
+}
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+.container::-webkit-scrollbar-track {
+	background: rgba(0,0,0,0);
+}
+.navi-bar{
+				overflow: hidden;
+				width: 100%;
+				display: flex;
+				align-items: center;
+}
+.logo{
+				font-size: 50px;
+				width: 50px;
+				cursor: pointer;
+				margin: 30px 0;
+}
+.menu-icon{
+				width: 25px;
+				cursor: pointer;
+				display: none;
+}
+nav{
+				flex: 1;
+				text-align: right;
+}
+nav ul{
+				margin-right: 8px;
+}
+nav ul li{
+				list-style: none;
+				display: inline-block;
+				margin-right: 30px;
+}
+nav ul li a{
+			 text-decoration: none;
+			 color: #fff;
+			 font-size: 15px;
+}
+nav ul li a:hover{
+				color: #4EA1EE;
+}
+span {
+				color: #173459;
+}
+.home{
+				margin-left: 10%;
+				text-align: left;
+				color: white;
+				margin-bottom: 10px;
+}
+.home h1{
+				letter-spacing: 2px;
+}
+.hotsongs{
+			  margin-bottom: 20px;
+				columns: 2 200px;
+				padding: 10px;
+				max-width: 600px;
+				background-color: #173459;
+}
+.hotsongs .song{
+				text-align: center;
+				border-bottom: 1px dashed white;
+				font-size: 15px;
+}
+.card {
+				width: 215px;
+				height: 205px;
+				display: inline-block;
+				border-radius: 10px;
+	   		padding: 10px 10px;
+	   		cursor: pointer;
+	   		margin: 10px 10px;
+	   		background-position: center;
+	   		background-size: cover;
+	   		transition: transform 0.5s;
+}
+.card:hover{
+				transform: translateY(-10px);
+}
+/*Home*/
+.home1{
+				background-image: url(image/phtophits.png);
+}
+.home2{
+				background-image: url(image/opm-music.png);
+}
+.home3{
+				background-image: url(image/RnB.png);
+}
+.home4{
+				background-image: url(image/rock.png);
+}
+.home5{
+				background-image: url(image/reggae.png);
+}
+.home6{
+				background-image: url(image/pop.png);
+}
+.home7{
+				background-image: url(image/k-pop.png);
+}
+.home8{
+				background-image: url(image/worship.png);
+}
+/*Top Hits*/
+.pht-1{
+				background-image: url(imagephtophits/snm.png);
+}
+.pht-2{
+				background-image: url(imagephtophits/isalang.jpg);
+}
+.pht-3{
+				background-image: url(imagephtophits/angwakas.png);
+}
+.pht-4{
+				background-image: url(imagephtophits/diwata.webp);
+}
+.pht-5{
+				background-image: url(imagephtophits/unangsayaw.jpg);
+}
+.pht-6{
+				background-image: url(imagephtophits/tahanan.jpg);
+}
+.pht-7{
+				background-image: url(imagephtophits/ikawlang.jpg);
+}
+.pht-8{
+				background-image: url(imagephtophits/neverenough.jpg);
+}
+.pht-9{
+				background-image: url(imagephtophits/ghost.png);
+}
+.pht-10{
+				background-image: url(imagephtophits/line.jpg);
+}
+.pht-11{
+				background-image: url(imagephtophits/uify.jpg);
+}
+.pht-12{
+				background-image: url(imagephtophits/uify.png);
+}
+/*OPM Music*/
+.opmm-1{
+				background-image: url(imageopm/lambing.png);
+}
+.opmm-2{
+				background-image: url(imageopm/paraluman.jpg);
+}
+.opmm-3{
+				background-image: url(imageopm/luha.jpg);
+}
+.opmm-4{
+				background-image: url(imageopm/sabihinmona.jpg);
+}
+.opmm-5{
+				background-image: url(imageopm/walangiba.jpg);
+}
+.opmm-6{
+				background-image: url(imageopm/kungwalaka.jpg);
+}
+.opmm-7{
+				background-image: url(imageopm/dimoalam.jpg);
+}
+.opmm-8{
+				background-image: url(imageopm/buko.jpg);
+}
+.opmm-9{
+				background-image: url(imageopm/ligaya.jpg);
+}
+.opmm-10{
+				background-image: url(imageopm/ikawlamang.jpg);
+}
+.opmm-11{
+				background-image: url(imageopm/nobela.png);
+}
+.opmm-12{
+				background-image: url(imageopm/demonyo.jpg);
+}
+/*RnB*/
+.rnb-1{
+				background-image: url(RnB/angel-baby.jpg);
+}
+.rnb-2{
+				background-image: url(RnB/higa.jpg);
+}
+.rnb-3{
+				background-image: url(RnB/double-take.jpg);
+}
+.rnb-4{
+				background-image: url(RnB/samahanmoako.jpg);
+}
+.rnb-5{
+				background-image: url(RnB/urong-sulong.jpg);
+}
+.rnb-6{
+				background-image: url(RnB/tunay.jpg);
+}
+.rnb-7{
+				background-image: url(RnB/kungpwedelang.jpg);
+}
+.rnb-8{
+				background-image: url(RnB/pano.jpg);
+}
+.rnb-9{
+				background-image: url(RnB/lamf.jpg);
+}
+.rnb-10{
+				background-image: url(RnB/sasusunodnalang.jpg);
+}
+.rnb-11{
+				background-image: url(RnB/traitor.png);
+}
+.rnb-12{
+				background-image: url(RnB/isapa.png);
+}
+/*Rock*/
+.rock-1{
+				background-image: url(imagerock/Marty-nyebera.jpg);
+}
+.rock-2{
+				background-image: url(imagerock/hallelujah.jpg);
+}
+.rock-3{
+				background-image: url(imagerock/parasayo.jpg);
+}
+.rock-4{
+				background-image: url(imagerock/baliw.jpg);
+}
+.rock-5{
+				background-image: url(imagerock/heaven-knows.jpg);
+}
+.rock-6{
+				background-image: url(imagerock/borrwed-time.jpg);
+}
+.rock-7{
+				background-image: url(imagerock/magpakailanman.jpg);
+}
+.rock-8{
+				background-image: url(imagerock/kisapmata.jpg);
+}
+.rock-9{
+				background-image: url(imagerock/paanosasabihin.jpg);
+}
+.rock-10{
+				background-image: url(imagerock/beer.png);
+}
+.rock-11{
+				background-image: url(imagerock/noypi.jpg);
+}
+.rock-12{
+				background-image: url(imagerock/sundo.png);
+}
+/*Reggae*/
+.reg-1{
+				background-image: url(imagereggae/lintik.jpg);
+}
+.reg-2{
+				background-image: url(imagereggae/dikdyonaryo.jpg);
+}
+.reg-3{
+				background-image: url(imagereggae/sabihinmo.jpg);
+}
+.reg-4{
+				background-image: url(imagereggae/ilalim.jpg);
+}
+.reg-5{
+				background-image: url(imagereggae/Filipina.jpg);
+}
+.reg-6{
+				background-image: url(imagereggae/malingakala.jpg);
+}
+.reg-7{
+				background-image: url(imagereggae/modelo.jpg);
+}
+.reg-8{
+				background-image: url(imagereggae/usok.jpg);
+}
+.reg-9{
+				background-image: url(imagereggae/bilog.jpg);
+}
+.reg-10{
+				background-image: url(imagereggae/mountain.jpg);
+}
+.reg-11{
+				background-image: url(imagereggae/tignanmo.jpg);
+}
+.reg-12{
+				background-image: url(imagereggae/heartstring.jpg);
+}
+/*PoP Music*/
+.pop-1{
+				background-image: url(imagepop/easy.png);
+}
+.pop-2{
+				background-image: url(imagepop/pk.png);
+}
+.pop-3{
+				background-image: url(imagepop/crazier.jpg);
+}
+.pop-4{
+				background-image: url(imagepop/bone.jpg);
+}
+.pop-5{
+				background-image: url(imagepop/party.jpg);
+}
+.pop-6{
+				background-image: url(imagepop/lapis.jpg);
+}
+.pop-7{
+				background-image: url(imagepop/hatid.jpg);
+}
+.pop-8{
+				background-image: url(imagepop/shivers.png);
+}
+.pop-9{
+				background-image: url(imagepop/butterflies.png);
+}
+.pop-10{
+				background-image: url(imagepop/drinking.png);
+}
+.pop-11{
+				background-image: url(imagepop/letters.jpg);
+}
+.pop-12{
+				background-image: url(imagepop/igii.jpg);
+}
+/*K-Pop Music*/
+.kpop-1{
+				background-image: url(k-pop/kill-this-love.jpg);
+}
+.kpop-2{
+				background-image: url(k-pop/ddu.jpg);
+}
+.kpop-3{
+				background-image: url(k-pop/dynamite.png);
+}
+.kpop-4{
+				background-image: url(k-pop/swipe.png);
+}
+.kpop-5{
+				background-image: url(k-pop/zoom.png);
+}
+.kpop-6{
+				background-image: url(k-pop/lalisa.png);
+}
+.kpop-7{
+				background-image: url(k-pop/fancy.png);
+}
+.kpop-8{
+				background-image: url(k-pop/what-is-love.png);
+}
+.kpop-9{
+				background-image: url(k-pop/fearless.png);
+}
+.kpop-10{
+				background-image: url(k-pop/butyou.png);
+}
+.kpop-11{
+				background-image: url(k-pop/lovedive.png);
+}
+.kpop-12{
+				background-image: url(k-pop/darari.jpg);
+}
+/* Worship */
+.worship-1{
+				background-image: url(imageworship/10k.jpg);
+}
+.worship-2{
+				background-image: url(imageworship/alay-ko.jpg);
+}
+.worship-3{
+				background-image: url(imageworship/king.jpg);
+}
+.worship-4{
+				background-image: url(imageworship/leadmelord.jpg);
+}
+.worship-5{
+				background-image: url(imageworship/igaveyoumyheart.jpg);
+}
+.worship-6{
+				background-image: url(imageworship/manalangin.png);
+}
+.worship-7{
+				background-image: url(imageworship/pag-ibig-lang.jpg);
+}
+.worship-8{
+				background-image: url(imageworship/hopehascome.jpg);
+}
+.worship-9{
+				background-image: url(imageworship/timhughes.jpg);
+}
+.worship-10{
+				background-image: url(imageworship/healourland.jpg);
+}
+.worship-11{
+				background-image: url(imageworship/gary.jpg);
+}
+.worship-12{
+				background-image: url(imageworship/whoami.jpg);
+}
+a{
+				text-decoration: none;
+				color: white;
+}
+h3{
+				font-size: 12px;
+}
+#status{
+				color: #fff;
+				font-size: 20px;
+}
+#icon {
+				width: 120px;
+				height: 120px;
+				cursor: pointer;
+}
+.lyrics {
+				padding-bottom: 50px;
+				margin-top: 120px;
+				color: lightgrey;
+				text-align-last: center;
+}
+.lyrics-box {
+				 border-radius: 20px;
+        width: 85%;
+        height: 100%;
+        padding: 15px; 
+        color: #f8f9f9;
+        background: #173459;
+        font-weight: 350;
+        margin-left: 8%;
+}
+.music-box{
+				width: 100%;
+				height: 410px;
+}
+.iconDetails img{
+				margin-left:2%;
+				float:left; 
+				height: 200px;
+				width: 200px;
+				border-radius: 10px;
+}
+.container2 {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+}
+.music-info{
+				margin-top: 50px;
+				display: inline-block;
+				align-items: center;
+				margin-left: 10px;
+				color: #fff;
+}
+.music-info h2{
+				font-size: 20px;
+				margin: 0px;
+}
+form{
+  background: #173459;
+  width: 690px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 30px 20px;
+  color: white;
+}
+
+form .title{
+	padding-top: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  }
+form .half{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form .half .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input{
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: rgba(0,0,0,0);
+  color: #fff;
+  font-size: 17px;
+}
+
+form .full{
+  margin-bottom: 24px;
+}
+
+form .full textarea{
+  background: rgba(0,0,0,0);
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+.item input::placeholder,
+.full textarea::placeholder{
+  color: #ccc;
+}
+form .action{
+	display: flex;
+  margin-bottom: 32px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form .action input{
+  background: white;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+  width: 100%;
+}
+.about{
+				border-radius: 10px;
+       padding: 20px; 
+       color: #f8f9f9;
+       background-color: #173459;
+       font-weight: 350;
+       text-align-last: center;
+}
+.about .icons{
+				display: flex;
+				justify-content: center;
+}
+.about .icons a{
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 600;
+  width: 45px;
+  margin: 0 15px;
+}
+.fa-instagram{  
+   background: #DC22A7;  
+ }  
+ .fa-facebook{  
+   background: #0089F4;  
+ }  
+ .fa-twitter{  
+   background: #01A5F8;  
+ }  
+ .fa-telegram{  
+   background: #00A1DC;  
+ }  
+ .social-media{
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  }
+  .action span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+  .social-media h4{
+  				color: white;
+  }
+  .about .aboutus{
+  				border-bottom: 1px solid white;
+  				margin-bottom: 10px;
+  }
+.hot-songs{
+				color: #fff;
+				font-size: 25px;
+				margin-left: 30px;
+				letter-spacing: 3px;
+}
+.video{
+				width: 70%;
+				height: 350px;
+				background-color: #173459;
+				border-radius: 5px;
+				position: relative;
+				margin-left: 16%;
+				padding: 5px;
+				margin-bottom: 20px;
+				
+}
+.video iframe{
+				width: 100%;
+				height: 100%;
+				border-radius: 5px;
+}
+form .half .item input:focus, form .full textarea:focus, form .icons a:hover{
+  background: rgba(255,255,255,0.075);
+  color: white;
+}
+#input{
+				height: 35px;
+				width: 220px;
+				border-radius: 15px;
+				border: 1px solid #173459;
+				margin-left: 165px;
+				padding: 0 10px;
+				background: rgb(184,184,184, .3);
+				color: #fff;
+}
+#input::placeholder{
+				color: white;
+}
+.search_bx2{
+	top: 90px;
+	margin-left: 215px;
+	position: absolute;
+	width: 220px;	
+	max-height: 200px;
+	border-radius: 10px;
+	background-color: #173459;
+	overflow: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s linear;
+}
+.search_bx2::-webkit-scrollbar {
+  width: 7px;
+}
+.search_bx2::-webkit-scrollbar-track {
+	background: rgba(0,0,0,0);
+}
+.search_bx2::-webkit-scrollbar-thumb {
+	background: rgba(184, 184, 184, .9);
+	border-radius: 20px;
+}
+.search_bx2 a{
+	margin: 3px 5px;
+	text-decoration: none;
+	color: #fff;
+	width: 203px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	transition: .3s linear;
+}
+.search_bx2 a:hover{
+  border-radius: 3px;
+	background: rgb(184,184,184, .6);
+}
+.search_bx2 a img{
+	width: 45px;
+	height: 45px;
+	border-radius: 3px;
+	margin: 0 5px;
+}
+.search_bx2 a .artistName{
+				color: #fff;
+}
+.search_bx2 a .artistName h6{
+			font-size: 13px;
+}
+.search_bx2 a .artistName p{
+				color: rgb(255, 255, 255, .7);
+				font-size: 11px;
+				font-weight: 500;
+}
+@media only screen and (max-width:800px) {
+.container{
+				padding: 0 3%;
+}
+nav ul{
+				width: 100%;
+				background-image: linear-gradient(to right,#4B5EE8,#000000);
+				position: absolute;
+				top: 75px;
+				right: 0;
+				z-index: 2;
+}
+nav ul li{
+				display: block;
+				margin-top: 10px;
+				margin-bottom: 10px;
+}
+nav ul li a{
+				color: #fff;
+}
+.menu-icon{
+				display: block;
+}
+#navlinks{
+				overflow: hidden;
+				transition: .5s;
+}
+.logo{
+				font-size: 25px; 
+				font-weight: 400; 
+				padding-left: 20px;
+				width: 100px;
+				cursor: pointer;
+}
+#input{
+				margin-left: 25px;
+}
+.search_bx2{
+				top: 70px;
+				margin-left: 125px;
+}
+.card{
+				height: 140px;
+				width: 150px;
+				margin: 10px 7px;
+}
+.playlist {
+				margin: 20px;
+}
+h3{
+				font-size: 10px;
+				color: #fff;
+}
+.track{
+				font-size: 11px;
+}
+#status{
+				color: #fff;
+				font-size: 15px;
+}
+#icon {
+				width: 90px;
+				height: 90px;
+				
+}
+.lyrics {
+				padding-bottom: 50px;
+				margin-top: 70px;
+				color: lightgrey;
+				text-align-last: center;
+}
+.lyrics-box {
+         margin-left: 5%;
+         font-size: 15px;
+         width: 90%;
+}
+.hotsongs .song{
+	font-size: 12px;
+}
+.iconDetails img{
+				margin-left: 2%;
+				float: left; 
+				height: 150px;
+				width: 150px;
+				border-radius: 10px;
+}
+.item input::placeholder,
+.full textarea::placeholder{
+  font-size: 15px;
+}
+.video{
+				width: 80%;
+				height: 300px;
+				margin-left: 10%;
+}
+}

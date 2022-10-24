@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Ed Sheeran - Shivers</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/shivers.png" >
+        </div>  
+    <div class="music-info">
+    <h2>Shivers</h2>
+    <p>Singer: Ed Sheeran</p>
+    <p class="track">Track 2 - = Equals</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Verse 1]<br>
+I took an arrow to the heart<br>
+I never kissed a mouth that tastes like yours<br>
+Strawberries and a somethin' more<br>
+Ooh, yeah, I want it all<br>
+Lipstick on my guitar<br>
+Fill up the engine, we can drive real far<br>
+Go dancin' underneath the stars<br>
+Ooh, yeah, I want it all<br>
+Mmm, you got me feelin' like<br>
+<br>
+[Pre-Chorus]<br>
+I wanna be that guy, I wanna kiss your eyes<br>
+I wanna drink that smile, I wanna feel like I'm<br>
+Like my soul's on fire, I wanna stay up all day and all night<br>
+Yeah, you got me singin' like<br>
+<br>
+[Chorus]<br>
+Ooh, I love it when you do it like that<br>
+And when you're close up, give me thе shivers<br>
+Oh, baby, you wanna dance 'til the sunlight cracks<br>
+And whеn they say the party's over, then we'll bring it right back<br>
+And we'll say, "Ooh, I love it when you do it like that"<br>
+And when you're close up, give me the shivers<br>
+Oh, baby, you wanna dance 'til the sunlight cracks<br>
+And when they say the party's over, then we'll bring it right back<br>
+<br>
+[Verse 2]<br>
+Into the car<br>
+On the backseat in the moonlit dark<br>
+Wrap me up between your legs and arms<br>
+Ooh, I can't get enough<br>
+You know you could tear me apart<br>
+Put me back together and take my heart<br>
+I never thought that I could love this hard<br>
+Ooh, I can't get enough<br>
+Mmm, you got me feelin' like<br>
+<br>
+[Pre-Chorus]<br>
+I wanna be that guy, I wanna kiss your eyes<br>
+I wanna drink that smile, I wanna feel like I'm<br>
+Like my soul's on fire, I wanna stay up all day and all night<br>
+Yeah, you got me singin' like<br>
+<br>
+[Chorus]<br>
+Ooh, I love it when you do it like that<br>
+And when you're close up, give me the shivers<br>
+Oh, baby, you wanna dance 'til the sunlight cracks<br>
+And when they say the party's over, then we'll bring it right back<br>
+And we'll say, "Ooh, I love it when you do it like that"<br>
+And when you're close up, give me the shivers<br>
+Oh, baby, you wanna dance 'til the sunlight cracks<br>
+And when they say the party's over, then we'll bring it right back<br>
+<br>
+[Bridge]<br>
+Baby, you burn so hot, you make me shiver<br>
+With the fire you got, this thing we started<br>
+I don't want it to stop<br>
+You know you make me shiver<br>
+Baby, you burn so hot, you make me shiver<br>
+With the fire you got, this thing we started<br>
+I don't want it to stop<br>
+You know you make me shiver<br>
+Yeah, you got me singin' like<br>
+<br>
+[Chorus]<br>
+Ooh, I love it when you do it like that<br>
+And when you're close up, give me the shivers<br>
+Oh, baby, you wanna dance 'til the sunlight cracks<br>
+And when they say the party's over, then we'll bring it right back (Oh, no)<br>
+And we'll say, "Ooh, I love it when you do it like that"<br>
+And when you're close up, give me the shivers<br>
+Oh, baby, you wanna dance 'til the sunlight cracks<br>
+And when they say the party's over, then we'll bring it right back, hey
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13_a54fMhMgy2IV1eFfFa3RLSl3pU9MG6/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1opJ9H7ODQeX1uqiYm68eVImTmaiXqQHL" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

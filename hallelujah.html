@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Bamboo - Hallelujah</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+													<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagerock/hallelujah.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Hallelujah</h2>
+    <p>Singer: Bamboo</p>
+    <p class="track">Track 6 - Light Peace Love</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Anong balita sa radyo at TV<br>
+Gano'n pa rin, kumakapa sa dilim<br>
+Minsa'y naisip ko nang umalis na lang dito<br>
+Kalimutan ang lahat, lumipad, lumayo<br>
+<br>
+[Verse 2]<br>
+Bato-bato sa langit<br>
+Tamaan 'wag magalit<br>
+Alam naman natin<br>
+Kung sino ang tuso<br>
+Sa bawat sumpang umiiyak, singil ko ay piso<br>
+Sa bawat lumuluhang dukha, alay ko'y dugo<br>
+<br>
+[Pre-Chorus]<br>
+May kasama ka kapatid, kaibigan<br>
+Hangga't ako'y humihinga, may pag-asa pa<br>
+<br>
+[Chorus]<br>
+Hallelujah<br>
+Sinong sawa, sinong galit<br>
+Sumigaw, ngayong gabi<br>
+Hallelujah<br>
+<br>
+[Bridge]<br>
+Blinded by the light<br>
+I could barely see the faces in front of me<br>
+Ask me how do we begin<br>
+Well for starters from within<br>
+I'm ashamed of what I've become in the mirror<br>
+The face of my one true enemy<br>
+Hallelujah, it's a new day<br>
+<br>
+Let's take control<br>
+If I have to take this message door to door<br>
+Save myself, save every soul<br>
+With permission, I make this my personal mission<br>
+Save me from the fire, from the fire<br>
+Save me from the fire<br>
+<br>
+[Verse 3]
+Ngayong gabi, ako ang sundalo mo<br>
+Habang ika'y tulog ako'y gising nakabantay sa'yo<br>
+Eh kasi, mahal kita<br>
+Tingnan mo, pag-ibig ko'y, sa'yo lamang<br>
+<br>
+[Pre-Chorus]<br>
+May kasama ka kapatid, kaibigan<br>
+Hangga't ako'y humihinga, may pag-asa pa<br>
+<br>
+[Chorus]<br>
+Hallelujah<br>
+Sinong sawa, sinong galit<br>
+Sumigaw, ngayong gabi<br>
+Hallelujah<br>
+<br>
+Sinong sawa, sinong galit<br>
+Sumigaw, ngayong gabi<br>
+Hallelujah<br>
+<br>
+Hallelujah<br>
+Hallelujah
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12E0-Nf7Xy0-Hf4o5hkg7t5j_47lKgDtF/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+						</body>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1mUfJ5Kt3kqCRJkmOQFOFIhHwC_UR4Try" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  function audioEnded () {
+											document.getElementById("status").innerHTML="Audio End";
+											icon.src ="image/play.png"
+											}
+											mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				
+</html>

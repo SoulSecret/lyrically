@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Lance Santidas - Tunay</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/tunay.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Tunay</h2>
+    <p>Singer: Lance Santidas</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Pakiramdam ko ngayo'y laging sabik<br>
+Maramdaman ang mga yakap mo't halik<br>
+Inaantay ko lagi ang iyong pagbalik<br>
+Ako'y tinamaan ng lintik<br>
+<br>
+[Refrain]<br>
+Buti nakilala ka<br>
+Nawala ang lungkot na dala<br>
+Salamat laging and'yan ka<br>
+Binigyan mong kulay ang buhay ko na nalalanta<br>
+<br>
+[Pre-Chorus]<br>
+'Di ba ang sabi mo sa akin ito ay panghabang-buhay na<br>
+Pangakong aalagaan at iingatan ka<br>
+<br>
+[Chorus]<br>
+Kasi ang sarap magmahal 'pag alam mong tunay<br>
+Hindi ka na mag-iisa sa'kin 'di mawawalay<br>
+Lagi ipagpapasalamat ika'y ibinigay<br>
+Wagi 'yan lang ang alam ko at ikaw ang patunay<br>
+<br>
+[Verse 2]<br>
+Alaga't asikaso mo lagi sa'kin<br>
+Binibigay mo pa pati balat ng iyong chicken ~<br>
+Joy ang dama ko 'pag ika'y paparating<br>
+Bidang-bida ang saya, the best sa'yong piling<br>
+<br>
+[Refrain]<br>
+Wala nang hahanapin pa<br>
+Marunong dumiskarte 'di ka lang puro ganda<br>
+Tiwala sa isa't isa'y mahalaga<br>
+Suporta sa pangarap hanggang sa maabot ng isa<br>
+<br>
+[Pre-Chorus]<br>
+'Di ba ang sabi mo sa akin ito ay panghabang-buhay na<br>
+Pangakong aalagaan at iingatan ka<br>
+<br>
+[Chorus]<br>
+Kasi ang sarap magmahal 'pag alam mong tunay<br>
+Hindi ka na mag-iisa sa'kin 'di mawawalay<br>
+Lagi ipagpapasalamat ika'y ibinigay<br>
+Wagi 'yan lang ang alam ko at ikaw ang patunay<br>
+<br>
+[Chorus]<br>
+Kasi ang sarap magmahal 'pag alam mong tunay<br>
+Hindi ka na mag-iisa sa'kin 'di mawawalay<br>
+Lagi ipagpapasalamat ika'y ibinigay<br>
+Wagi 'yan lang ang alam ko at ikaw ang patunay<br>
+<br>
+[Outro]<br>
+'Yan lang ang alam ko at ikaw ang patunay<br>
+Ang sarap magmahal 'pag alam mong tunay
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11QIs6a2Gx1t5D1dQCOBLjB3oGXuvWz4A/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1jukWIStzyPkGAqoVUK50tytatU9Wzl4l" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+							<script src="search.js"></script>	
+				</body>
+				
+</html>

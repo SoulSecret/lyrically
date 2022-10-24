@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Silent Sanctuary - Ikaw Lamang</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageopm/ikawlamang.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Ikaw Lamang</h2>
+    <p>Singer: Silent Sacntuary</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+'Di ko maintindihan<br>
+Ang nilalaman ng puso<br>
+Tuwing magkahawak ang ating kamay<br>
+Pinapanalangin lagi tayong magkasama<br>
+Hinihiling bawat oras kapiling ka<br>
+<br>
+[Refrain]<br>
+Sa lahat ng aking ginagawa<br>
+Ikaw lamang ang nasa isip 'ko sinta<br>
+<br>
+[Pre-Chorus]<br>
+Sana'y 'di na tayo magkahiwalay<br>
+Kahit kailan pa man<br>
+<br>
+[Chorus]<br>
+Ikaw lamang ang aking minamahal<br>
+Ikaw lamang ang tangi 'kong inaasam<br>
+Makapiling ka habang buhay<br>
+Ikaw lamang sinta<br>
+Wala na 'kong hihingin pa<br>
+Wala na<br>
+<br>
+[Verse 3]<br>
+Ayoko ng maulit pa<br>
+Ang nakaraang, ayokong maalala<br>
+Bawat oras na wala ka<br>
+Parang mabigat na parusa<br>
+Huwag mong kakalimutan na kahit nag-iba<br>
+'Di ako tumigil magmahal sa'yo sinta<br>
+<br>
+[Refrain]<br>
+Sa lahat ng aking ginagawa<br>
+Ikaw lamang ang nasa isip 'ko sinta<br>
+<br>
+[Pre-Chorus]<br>
+Sana'y 'di na tayo magkahiwalay<br>
+Kahit kailan pa man<br>
+<br>
+[Chorus]<br>
+Ikaw lamang ang aking minamahal<br>
+Ikaw lamang ang tangi 'kong inaasam<br>
+Makapiling ka habang buhay<br>
+Ikaw lamang sinta<br>
+Wala na 'kong hihingin pa<br>
+Wala na - oh, oh<br>
+<br>
+Ikaw lamang ang aking minamahal<br>
+Ikaw lamang ang tangi 'kong inaasam<br>
+Makapiling ka habang buhay<br>
+Ikaw lamang sinta<br>
+Wala na 'kong hihingin pa<br>
+Wala na - oh, oh
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/10PREQYIuDT6mccQQiHvXS4jPomSXHiih/preview" frameborder="0"></iframe>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1sFeXxYGAOREsex31ZjA8jcftVGBnnBh_" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

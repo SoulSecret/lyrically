@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Parokya ni Edgar - Para sa'yo</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+													<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagerock/parasayo.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Para sa'yo</h2>
+    <p>Singer: Parokya ni Edgar</p>
+    <p class="track">Track 3 - Halina sa Parokya</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Lumayo kana sa akin<br>
+'Wag mo kong kausapin<br>
+Parang awa mo na<br>
+'Wag kang magpapaakit sa'kin<br>
+Ayoko lang masaktan ka<br>
+Malakas akong mambola<br>
+Hindi ako santo<br>
+<br>
+[Chorus]<br>
+Pero para sa'yo<br>
+Ako'y magbabago<br>
+Kahit mahirap<br>
+Kakayanin ko<br>
+Dahil para sa'yo<br>
+Handa akong magpakatino<br>
+Laging isipin<br>
+Lahat ay gagawin<br>
+Basta para sa'yo<br>
+<br>
+[Verse 2]<br>
+Hindi ikaw 'yung tipong niloloko<br>
+At hindi naman ako 'yung tipong nagseseryoso<br>
+At kahit sulit sana sa'yo ang kasalanan<br>
+Lolokohin lang kita kaya kung pwede 'wag nalang<br>
+Dahil ayoko nang masaktan ka<br>
+'Wag kang maniniwala<br>
+Hindi ako santo<br>
+<br>
+[Chorus]<br>
+Pero para sa'yo<br>
+Ako'y magbabago<br>
+Kahit mahirap<br>
+Kakayanin ko<br>
+Dahil para sa'yo<br>
+Handa akong magpakatino<br>
+Laging isipin<br>
+Lahat ay gagawin<br>
+Basta para sa'yo<br>
+<br>
+[Instrumetal Bridge]<br>
+<br>
+[Verse 3]<br>
+Bakit nakikinig kapa<br>
+Matatapos na ang kanta<br>
+Pinapatakas na kita<br>
+Mula nung unang stanza<br>
+Hindi ka ba natatakot<br>
+Baka ikaw ay masangkot<br>
+Sa mga kasalanan ko<br>
+<br>
+[Chorus]<br>
+Pero para sa'yo<br>
+Ako'y magbabago<br>
+Kahit mahirap<br>
+Kakayanin ko<br>
+Dahil para sa'yo<br>
+Handa akong magpakatino<br>
+Laging isipin<br>
+Lahat ay gagawin<br>
+Basta para sa'yo<br>
+Ako'y magbabago<br>
+Kahit mahirap<br>
+Kakayanin ko<br>
+Dahil para sa'yo<br>
+Handa akong magpakatino<br>
+Laging isipin<br>
+Lahat ay gagawin<br>
+Basta para sa'yo...<br>
+<br>
+[Instrumental Outro]
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/12DiF_3GhmLJ0qTiMvlspv43LBYEcnD5W/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1mUZZ0OSoIRGIkDJJUCGIvXl4d168_pFK" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  function audioEnded () {
+											document.getElementById("status").innerHTML="Audio End";
+											icon.src ="image/play.png"
+											}
+											mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+						<script src="search.js"></script>		
+				</body>
+				
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Rivermaya - Kisaomata</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+													<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagerock/kisapmata.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Kisapmata</h2>
+    <p>Singer: Rivermaya</p>
+    <p class="track">Track 10 - Trip</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Nitong umaga lang<br>
+Pagka lambing-lambing<br>
+Nang i'yong mga matang hayup kung tumingin<br>
+Nitong umaga lang<br>
+Pagka galing-galing<br>
+Nang i'yong sumpang walang aawat sa atin<br>
+<br>
+[Chorus]<br>
+O kay bilis namang<br>
+Maglaho ng pag-ibig mo sinta<br>
+Daig mo pa ang isang kisapmata<br>
+Kanina'y narlang o ba't<br>
+Bigla namang nawala<br>
+Daig mo pa ang isang kisapmata<br>
+<br>
+[Verse 2]<br>
+Kani-kanina lang<br>
+Pagka ganda-ganda<br>
+Nang pagkasabi mong sana'y tayo na nga<br>
+Kani-kanina lang<br>
+Pagka saya-saya<br>
+Nang buhay kong bigla na lamang nagiba<br>
+<br>
+[Chorus]<br>
+O kay bilis namang<br>
+Maglaho ng pag-ibig mo sinta<br>
+Daig mo pa ang isang kisapmata<br>
+Kanina'y narlang o ba't<br>
+Bigla namang nawala<br>
+Daig mo pa ang isang kisapmata<br>
+<br>
+[Verse 3]<br>
+Nitong umaga lang<br>
+Pagka lambing-lambing<br>
+Nitong umaga lang<br>
+Pagkagaling-galing kani-kanina lang<br>
+Pagkaganda ganda kani-kanina lang<br>
+Pagka saya-saya<br>
+<br>
+[Chorus]<br>
+O kay bilis namang<br>
+Maglaho ng pag-ibig mo sinta<br>
+Daig mo pa ang isang kisapmata<br>
+Kanina'y narlang o ba't<br>
+Bigla namang nawala<br>
+Daig mo pa ang isang kisapmata
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/121Z7Xb_xs-Mm85R1ghSaDevCQlqFB2R1/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1mH90IattLCHlSU4RBDBF7am_oAqyZVbx" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  function audioEnded () {
+											document.getElementById("status").innerHTML="Audio End";
+											icon.src ="image/play.png"
+											}
+											mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+							<script src="search.js"></script>	
+				</body>
+				
+</html>

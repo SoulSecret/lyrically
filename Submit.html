@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+				<head> 
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lyrically | Submit Lyrics</title> 
+		<link rel="stylesheet" href="styless.css"> 
+		<link rel="icon" href="image/loco.jpg">
+	</head> 
+		<body> 
+	<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+					</div>
+				<form onsubmit="sendEmail(); reset(); return false;">
+								  <div class="title">
+        <p>Filling out this form will send your message directly to Lyrically Developer!</p>
+        </div>
+      <div class="half">
+      				<div class="item">
+          <label for="purpose">YOU WANT TO</label>
+          <input type="text" placeholder="Submit Lyrics / Correct Lyrics" id="subject" required>
+        </div>
+        </div>
+        <div class="half">
+        <div class="item">
+          <label for="name">NAME</label>
+          <input type="text" placeholder="Your Name" id="name">
+        </div>
+        </div>   
+        <div class="half">
+        <div class="item">
+          <label for="artist">Artist/Band</label>
+          <input type="text" placeholder="Artist/Band" id="artist" required>
+        </div>
+        </div>
+        <div class="half">
+        <div class="item">
+          <label for="title">Song Title</label>
+          <input type="text" placeholder="Song Title" id="title" required>
+        </div>
+        </div>
+        <div class="half">
+        <div class="item">
+          <label for="album">Song Album</label>
+          <input type="text" placeholder="Song Album" id="album">
+        </div>
+        </div>
+      <div class="full">
+        <label for="lyrics">Lyrics</label>
+        <textarea placeholder="Song Lyrics" id="lyrics" required></textarea>
+      </div>
+      <div class="action">
+        <input type="submit" value="SEND MESSAGE">
+        <span></span>
+         </div>
+ </form>
+ </div>
+ <script>
+ 				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "190px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+				</script>
+				<script src="https://smtpjs.com/v3/smtp.js"> </script>
+			<script>
+		 function sendEmail(){
+		 Email.send({
+		 SecureToken : "312376bd-ecae-40a8-8a87-01f78b440987",
+    To : "lyricallywebsite19@gmail.com",
+    From : "bagangpakak010@gmail.com",
+    Subject : document.getElementById("subject").value,
+    Body: "Name: " + document.getElementById("name").value
+				+ "<br> Artist/Band: " + document.getElementById("artist").value
+				+ "<br> Song Title: " + document.getElementById("title").value
+				+ "<br> Song Album: " + document.getElementById("album").value
+				+ "<br><br> Song Lyrics: <br>" + document.getElementById("lyrics").value
+}).then(message => alert ("Message Sent Successfully!"));
+}
+		</script>
+	</body>
+ </html> 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Arthur Nery - Higa</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/higa.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Higa</h2>
+    <p>Singer: Arthur Nery</p>
+    <p class="track">Track 9 - Letters Never Sent</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Kailangan mong malaman<br>
+Kung kailan ka kailangan<br>
+Parang 'di na naranasang<br>
+Ikaw naman ang ipaglaban<br>
+Bakit ba laging isinasantabi ang ‘yong sarili para sa iba<br>
+Naghahangad sa taong ‘di babalik subukan mo namang mag pahinga<br>
+<br>
+[Chorus]<br>
+At dahan-dahang ihiga ang katawan nang ‘yong malamang 'di ka nag-iisa<br>
+Halika na’t 'di kailangang pilitin<br>
+Dahil para sa’kin ika’y mahalaga<br>
+<br>
+[Verse 2]<br>
+Meron ngang puso<br>
+Ngunit hindi mo nakikita ito<br>
+Kahit pa tayo’y nasa sulok<br>
+'Di ka parin magpa-pasuyo<br>
+Konting pilit pa ba ang kailangan<br>
+Oh sadyang ‘di ako ang gusto<br>
+Konting silip naman sa’king nararamdaman sa’yo<br>
+<br>
+[Chorus]<br>
+At dahan-dahang ihiga ang katawan nang ‘yong malamang 'di ka nag-iisa<br>
+Halika na’t 'di kailangang pilitin<br>
+Dahil para sa’kin ika’y mahalaga<br>
+Ika’y mahalaga<br>
+<br>
+[Bridge]<br>
+At dahan-dahang<br>
+At dahan-dahang<br>
+At dahan-dahang ihiga woah<br>
+<br>
+[Chorus]<br>
+At dahan-dahang ihiga ang katawan nang ‘yong malamang 'di ka nag-iisa<br>
+Halika na’t 'di kailangang pilitin<br>
+Dahil para sa’kin ika’y mahalaga<br>
+At dahan-dahang ihiga ang katawan nang ‘yong malamang 'di ka nag-iisa<br>
+Halika na’t 'di kailangang pilitin<br>
+Dahil para sa’kin ika’y mahalaga
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11hJWlkD1iJevLu1BQN05lZriW3SWzkry/preview" frameborder="0"></iframe>
+							</div>
+						</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download &id=1k3vi5GRSK1ACVJ2gxABwKYDi2oAgyBup" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+							<script src="search.js"></script>
+				</body>
+				
+</html>

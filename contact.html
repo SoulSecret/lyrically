@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+				<head> 
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lyrically | Contact</title> 
+		<link rel="stylesheet" href="styless.css"> 
+		<link rel="icon" href="image/loco.jpg">
+	</head> 
+		<body> 
+	<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+					</div>
+<form action="#">
+				<h2>Contact Developer</h2>
+      <div class="title">
+        <p>Filling out this form will send your message directly to Lyrically Developer!</p>
+      </div>
+        <div class="half">
+        <div class="item">
+          <label for="name">NAME</label>
+          <input type="text" placeholder="Your Name..." name="name" required>
+        </div>
+        </div>   
+        <div class="half">
+        <div class="item">
+          <label for="email">EMAIL</label>
+          <input type="email" placeholder="Your Email..." name="email" required>
+        </div>
+        </div>                   
+      <div class="full">
+        <label for="message">Message</label>
+        <textarea placeholder="Write Something..." name="message" required></textarea>
+      </div>
+      <div class="action">
+        <input type="submit" value="SEND MESSAGE">
+        <span></span>
+         </div>
+ </form>
+ </div>
+ <script>
+ 				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "190px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+				</script>
+				<script src="script.js"></script>
+				<script src="search.js"></script>
+	</body>
+ </html> 

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Victory Worship - Hope has Come</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageworship/hopehascome.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Hope has Come</h2>
+    <p>Singer: Victory Worship</p>
+    <p class="track">Track 2 - Hope Has Come</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+All of creation singing as one<br>
+Declaring the coming of the Light<br>
+Emmanuel, our God is with us<br>
+<br>
+[Verse 2]<br>
+All that is lost now will be found<br>
+For unto us a child is born<br>
+Our Mighty God, oh-oh, Jesus is for us<br>
+<br>
+[Chorus]<br>
+Sing a new song to our God<br>
+For in Him we have overcome<br>
+Raise the anthem of our love<br>
+Hallelujah! Our hope has come<br>
+<br>
+[Verse 3]<br>
+He is the promise, He is the word<br>
+The coming of life into our world<br>
+Everlasting One, our God is faithful<br>
+Our God is faithful<br>
+<br>
+[Chorus]<br>
+Sing a new song to our God<br>
+For in Him we have overcome<br>
+Raise the anthem of our love<br>
+Hallelujah! Our hope has come<br>
+Sing a new song to our God<br>
+For in Him we have overcome<br>
+Raise the anthem of our love<br>
+Hallelujah! Our hope has come<br>
+<br>
+[Interlude]<br>
+Our hope has come<br>
+Put our hope in You, Lord<br>
+<br>
+[Bridge]<br>
+Peace for my suffering, joy for my weeping<br>
+New life is beginning now<br>
+Your grace never failing, Your love with no ending<br>
+Forever we sing it loud<br>
+Peace for my suffering, joy for my weeping<br>
+New life is beginning now, ooh-oh<br>
+Your grace never failing, Your love with no ending<br>
+Forever we sing it loud, oh-oh-oh<br>
+<br>
+[Chorus]<br>
+Sing a new song to our God<br>
+For in Him we have overcome<br>
+Raise the anthem of our love<br>
+Hallelujah! Our hope has come<br>
+Sing a new song to our God<br>
+For in Him we have overcome<br>
+Raise the anthem of our love<br>
+Hallelujah! Our hope has come, oh<br>
+Our hope has come, His name is Jesus
+            </p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/14mM4VyPl6XF22OpnGFYNvf-uS7UaHHlV/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1rAqOb6fE3jhuMwBaqeLJJMRcqWkiWB57" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

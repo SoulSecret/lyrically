@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Bandang Lapis - Sana'y Di Nalang</title>
+								<link rel="icon" href="image/loco.jpg">
+								<link rel="stylesheet" href="styless.css">
+								<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+												</div>
+							 		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagepop/lapis.jpg" >
+        </div>  
+    <div class="music-info">
+    <h2>Sana'y Di Nalang</h2>
+    <p>Singer: Bandang Lapis</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img align="center" src="image/play.png" id="icon">
+					<div class="lyrics-box">
+
+<p>[Verse 1]<br>
+Ginawa ko naman lahat<br>
+Sumugal ako kahit alam kong talo<br>
+Iginugol ko lahat ng oras ko sayo<br>
+Para maramdaman mo lang na ganyan kita kamahal<br>
+<br>
+[Refrain]<br>
+Pero pang wala lang sa'yo<br>
+Ang lahat ng mga paghihirap ko<br>
+<br>
+[Chorus]<br>
+Sana’y di nalang kita nakilala<br>
+Sana’y di nalang kita nakasama<br>
+Sinaktan mo lang ako<br>
+Sana’y di nalang kita minahal<br>
+<br>
+[Verse 2]<br>
+Di na sana nagising sa magandang panaginip<br>
+Kung madaratnan ko lang<br>
+Ang umagang kay sakit<br>
+Di na sana niyakap<br>
+Ang kuwari mong pagtingin<br>
+Para di ako nasugatan<br>
+Sa ginawa mong patalim<br>
+<br>
+[Refrain]<br>
+Pero parang ayos lang sa'yo ang lahat<br>
+Kahit na ako'y sugatan<br>
+<br>
+[Chorus]<br>
+Sana’y di nalang kita nakilala<br>
+Sana’y di nalang kita nakasama<br>
+Sinaktan mo lang ako<br>
+Sana’y di nalang kita minahal<br>
+<br>
+[Bridge: Spoken]<br>
+Nung una kitang makilala, halos napakasaya ko<br>
+Halos 'di maipinta ang mga ngiti sa labi ko<br>
+Yung tipong sabay tayong nag-gugoodmorning sa isa't isa<br>
+Yung tipong sabay tayong nag-aalala<br>
+At tanong na "Kumain ka na ba?" at "Asan ka?"<br>
+Yung lambing na di na tayo mapaghihiwalay<br>
+Kaso lahat ng 'yon ay akala ko lang pala<br>
+Dumating ang umaga na nagbago kang bigla<br>
+Yung lambing? Pagmamahal? Tuluyan na ngang nawala<br>
+Nasan na 'yung dating ikaw?<br>
+Yung dating ikaw na kapag kasama ko<br>
+Yung puso ko'y humihiyaw<br>
+Mahal, miss na miss na kita<br>
+Kailan ka ba babalik?<br>
+Miss ko na 'yung init ng 'yong yakap at tamis ng 'yong halik<br>
+Pero kung usapang pagbabalik<br>
+Mukang malabo na<br>
+Dahil lahat ng pagkukulang ko<br>
+Wala eh, napunan na ng iba<br>
+<br>
+[Chorus]<br>
+Sana’y di nalang kita nakilala<br>
+Sana’y di nalang kita nakasama<br>
+Sinaktan mo lang ako<br>
+Sana’y di nalang kita minahal<br>
+<br>
+[Outro]<br>
+Oh, woah<br>
+Minahal
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/13r4aHygz14teV7kgtTgcosMPaTb-6Y_B/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+								<audio id="mySong">
+												<source src="https://docs.google.com/uc?export=download&id=1oUdrXVd7hHi_R1pU8LMOk2fCYupRdplG" type="audio/mp3">
+								</audio> 
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+</html>

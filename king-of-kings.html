@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Hillsong Worship - King of Kings</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageworship/king.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>King of Kings</h2>
+    <p>Singer: Hillsong Worship</p>
+    <p class="track">Track 6 - Awake</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+In the darkness we were waiting<br>
+Without hope, without light<br>
+Till from heaven You came running<br>
+There was mercy in Your eyes<br>
+To fulfill the law and prophets<br>
+To a virgin came the word<br>
+From a throne of endless glory<br>
+To a cradle in the dirt<br>
+<br>
+[Chorus]<br>
+Praise the Father, praise the Son<br>
+Praise the Spirit, three in one<br>
+God of glory, Majesty<br>
+Praise forever to the King of Kings<br>
+<br>
+[Verse 2]<br>
+To reveal the kingdom coming<br>
+And to reconcile the lost<br>
+To redeem the whole creation<br>
+You did not despise the cross<br>
+For even in your suffering<br>
+You saw to the other side<br>
+Knowing this was our salvation<br>
+Jesus for our sake you died<br>
+<br>
+[Chorus]<br>
+Praise the Father, praise the Son<br>
+Praise the Spirit, three in one<br>
+God of glory, Majesty<br>
+Praise forever to the King of Kings<br>
+<br>
+[Verse 3]<br>
+And the morning that You rose<br>
+All of heaven held its breath<br>
+Till that stone was moved for good<br>
+For the Lamb had conquered death<br>
+And the dead rose from their tombs<br>
+And the angels stood in awe<br>
+For the souls of all who'd come<br>
+To the Father are restored<br>
+<br>
+[Verse 4]<br>
+And the Church of Christ was born<br>
+Then the Spirit lit the flame<br>
+Now this gospel truth of old<br>
+Shall not kneel, shall not faint<br>
+By His blood and in His name<br>
+In His freedom I am free<br>
+For the love of Jesus Christ<br>
+Who has resurrected me<br>
+<br>
+[Chorus]<br>
+Praise the Father, praise the Son<br>
+Praise the Spirit, three in one<br>
+God of glory, Majesty<br>
+Praise forever to the King of Kings<br>
+<br>
+[Outro]<br>
+Praise forever to the King of Kings
+
+
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://www.youtube.com/embed/dQl4izxPeNU?rel=0" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1qwXHoqUyRoDvfykVu_5Zq8_UrqfNnESO" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+						<script src="search.js"></script>		
+				</body>
+				
+</html>

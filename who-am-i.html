@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Casting Crowns - Who am I</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageworship/whoami.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Who am I</h2>
+    <p>Singer: Casting Crowns</p>
+    <p class="track">Track 4 - Casting Crowns</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Verse 1]<br>
+Who am I, that the Lord of all the earth<br>
+Would care to know my name<br>
+Would care to feel my hurt?<br>
+Who am I, that the Bright and Morning Star<br>
+Would choose to light the way<br>
+For my ever wandering heart?<br>
+<br>
+[Pre-Chorus]<br>
+Not because of who I am<br>
+But because of what You've done<br>
+Not because of what I've done<br>
+But because of who You are<br>
+<br>
+[Chorus]<br>
+I am a flower quickly fading<br>
+Here today and gone tomorrow<br>
+A wave tossed in the ocean<br>
+A vapor in the wind<br>
+Still, You hear me when I'm calling<br>
+Lord, You catch me when I'm falling<br>
+And You've told me who I am<br>
+I am Yours, I am Yours<br>
+<br>
+[Verse 2]<br>
+Who am I, that the eyes that see my sin<br>
+Would look on me with love and watch me rise again?<br>
+Who am I, that the voice that calmed the sea<br>
+Would call out through the rain<br>
+And calm the storm in me?<br>
+<br>
+[Pre-Chorus]<br>
+Not because of who I am<br>
+But because of what You've done<br>
+Not because of what I've done<br>
+But because of who You are<br>
+<br>
+[Chorus]<br>
+I am a flower quickly fading<br>
+Here today and gone tomorrow<br>
+A wave tossed in the ocean<br>
+A vapor in the wind<br>
+Still, You hear me when I'm calling<br>
+Lord, You catch me when I'm falling<br>
+And You've told me who I am<br>
+I am Yours<br>
+<br>
+[Pre-Chorus]<br>
+Not because of who I am<br>
+But because of what You've done<br>
+Not because of what I've done<br>
+But because of who You are<br>
+<br>
+[Chorus]<br>
+I am a flower quickly fading<br>
+Here today and gone tomorrow<br>
+A wave tossed in the ocean<br>
+A vapor in the wind<br>
+Still, You hear me when I'm calling<br>
+Lord, You catch me when I'm falling<br>
+You told me who I am<br>
+I am Yours<br>
+I am Yours, I am Yours<br>
+<br>
+[Outro]<br>
+Whom shall I fear? Whom shall I fear?<br>
+'Cause I am Yours, I am Yours
+</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://www.youtube.com/embed/IFYnZ6ZplYs?rel=0" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1uWJc5XyqHY-CL3OThehijN-XGbKuGkDW" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

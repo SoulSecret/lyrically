@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Skusta Clee ft. Yuri - Sa Susunod Nalang</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="RnB/sasusunodnalang.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Sa Susunod Nalang</h2>
+    <p>Singer: Skusta Clee ft. Yuri </p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Intro]<br>
+Ha! Gusto ko lang naman makausap ka eh<br>
+You know, you know, I just wanna talk<br>
+Doobi-do-doop, doop, doop, da-rap, eh<br>
+Flip-D on the beat<br>
+Panty Droppaz League<br>
+<br>
+[Verse 1<br>
+Halos limang oras na akong nag-aantay sa'yo<br>
+Nag-aabang ako sa labas ng bahay niyo<br>
+Sipat ng sipat kung sisilip ka ba sa bintana<br>
+Magpakita ka'y parang 'di yata<br>
+<br>
+[Refrain]<br>
+Ilang beses ka nang lagi na lang gan'yan<br>
+Kung iwasan ako'y parang ayaw akong nand'yan<br>
+Sa susunod na punta ko'y pagbuksan mo na sana<br>
+Kase kahit anong mangyari ay 'di ako mawawalan ng pag-asa<br>
+<br>
+[Chorus]<br>
+Ayaw kitang pilitin kung 'di ka pa handa<br>
+Sa susunod nalang, sa susunod nalang<br>
+Ayaw kong nabibitin kaya mabuti pang<br>
+Ako'y uuwi nalang, sa susunod nalang<br>
+<br>
+[Verse 2]<br>
+Napupuyat na 'ko kakapa-alala<br>
+Kumain at mag-ingat kung sakaling maggala ka<br>
+Laging sinisipat ang imahe ng dalaga<br>
+Na pangarap makasama ko sa hirap at ginhawa<br>
+Tipikal na dahilan ng tagahanga mong<br>
+Hindi naghahanap ng iba kahit na nababatong<br>
+Naghihintay sa'yong sagot sa'king mga tinatanong<br>
+Habang ang pamantayan mo ay pilit kong tinatalon<br>
+Kase alam ko na hindi ka pa handa<br>
+May gusto kang makita pa sa'kin at madama<br>
+Kaya 'eto ako naghahanda 'kong madapa<br>
+Kung mabigo sa ngayon ayos lang kase may bukas pa<br>
+'Di nauubos 'yun kaya kahit kumukunot na ang noo ko<br>
+Ay sa alon naten ay sumusunod nalang<br>
+Susuyuin ka kahit hindi mo pa mapunuan<br>
+'Yung ikaw sa salitang tayo ayos lang sa susunod nalang<br>
+<br>
+[Chorus]<br>
+Ayaw kitang pilitin kung 'di ka pa handa ('Di ka pa handa)<br>
+Sa susunod nalang, sa susunod nalang<br>
+Ayaw kong nabibitin kaya mabuti pang (Kaya mabuti pa)<br>
+Ako'y uuwi nalang, sa susunod nalang<br>
+<br>
+[Chorus]<br>
+Ayaw kitang pilitin kung 'di ka pa handa ('Di ka pa handa)<br>
+Sa susunod nalang, sa susunod nalang<br>
+Ayaw kong nabibitin kaya mabuti pang (Kaya mabuti pa)<br>
+Ako'y uuwi nalang, sa susunod nalang<br>
+<br>
+[Outro/Chorus]<br>
+Ayaw kitang pilitin kung 'di ka pa handa<br>
+Sa susunod nalang, sa susunod nalang<br>
+Ayaw kong nabibitin kaya mabuti pang<br>
+Ako'y uuwi nalang, sa susunod nalang
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/11AvdYIjCn9Uu3AhjHN_Ur7xD_jbuTlat/preview" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1seHzye43GUJvo9k8lic8FZ5-Fjxks6lG" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+						<script src="search.js"></script>		
+				</body>
+				
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Anees - Sun and Moon</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+									<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imagephtophits/snm.png" >
+        </div>  
+    <div class="music-info">
+    <h2>Sun And Moon</h2>
+    <p>Singer: Anees</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+<p>[Intro]
+<br>Yeah, yeah
+
+<br><br>[Chorus]
+<br>Baby, baby, you're my sun and moon
+<br>Girl, you're everything between
+<br>A lot of pretty faces could waste my time
+<br>But you're my dream girl
+<br>You make flowers bloom
+<br>Girl, you make the stars collide
+<br>And I don't know what I did
+<br>To get lucky like this but it sure feels fine
+
+<br><br>[Verse 1]
+<br>'Cause you give me love and affection'
+<br>I give you all my protection
+<br>I'm tryna stay by your side till the day I die
+<br>And you give me all of your love
+<br>And I give you all of my trust
+<br>I know you'll never betray me and leave my side, oh my
+
+<br><br>[Chorus]
+<br>Baby, baby, you're my sun and moon
+<br>Girl, you're everything between
+<br>A lot of pretty faces could waste my time
+<br>But you're my dream girl
+<br>You make flowers bloom
+<br>(Girl, you make the flowers bloom)
+<br>Girl, you make the stars collide
+<br>(Don't you know you make the stars collide?)
+<br>And I don't know what I did
+<br>To get lucky like this but it sure feels fine
+
+<br><br>[Verse 2]
+<br>'Cause I see your face when I'm sleepin'
+<br>I wake up grateful to breathe in
+<br>The air you float through, I wrote you a lullaby
+<br>A song to sing on your pillow
+<br>Swift as a swing on a willow
+<br>My sweetest words I'm the birds in your perfect sky, oh my
+
+<br><br>[Chorus]
+<br>Baby, baby, you're my sun and moon
+<br>Girl, you're everything between
+<br>A lot of pretty faces could waste my time
+<br>But you're my dream girl (Girl)
+<br>You make flowers bloom
+<br>(Girl, you make the flowers bloom)
+<br>Girl, you make the stars collide
+<br>(Don't you know you make the stars collide?)
+<br>And I don't know what I did
+<br>To get lucky like this but it sure feels fine
+<br>Baby, baby, you're my sun and moon
+<br>Girl, you're everything between
+<br>A lot of pretty faces could waste my time
+<br>But you're my dream girl
+<br>You make flowers bloom
+<br>(Girl, you make the flowers bloom)
+<br>Girl, you make the stars collide
+<br>(Don't you know you make the stars collide?)
+<br>And I don't know what I did
+<br>To get lucky like this but it sure feels fine, oh my, oh my
+
+<br><br>[Outro]
+<br>Oh my, oh my, oh my
+<br>Yeah, oh my, oh my
+<br>Baby, baby, you're mine
+								</p>
+								
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://www.youtube.com/embed/XnJxjvNqLX8?rel=0" frameborder="0"></iframe>
+							</div>
+							</div>
+							</body>
+<audio id="mySong">
+				<source src="https://drive.google.com/uc?export=download&id=1e0LcXJ12x9aA_NfiKsPRgQ79ErHHfMdm" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+				<script src="search.js"></script>
+</html>

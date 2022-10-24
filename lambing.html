@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Matthaios - Lambing</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageopm/lambing.png" >
+        </div>  
+    <div class="music-info">
+    <h2>Lambing</h2>
+    <p>Singer: Matthaios</p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>[Intro]<br>
+Matthaios, be wonderin'<br>
+<br>
+[Chorus]<br>
+Gusto ko lang naman maramdaman ang lambing mo (Ang lambing mo)<br>
+'Di kayang tapatan ng sino man ang yakap mo (Ang yakap mo)<br>
+Kaya halika na't sa 'kin tumabi (Yeah)<br>
+'Wag kang lalayo, please, 'wag din aalis (No, no)<br>
+Dito ka na lang magpalipas ng gabi (Hey)<br>
+I will be your peace kahit sandali (Yes, sir)<br>
+<br>
+[Verse 1]<br>
+'Wag mo munang titingnan ang iyong orasan (No)<br>
+Pwede bang atensyon mo sa akin ilaan (Yeah)<br>
+Kahit ang mga gawain ay kaligtaan (Huh)<br>
+Kahit sandali lang, sana ay mapagbigyan (Yuh-yeet)<br>
+Babe, I'm gonna cruise around the city, you can join me (Woo)<br>
+Night ride, night lights, be a little crazy (Skrrt)<br>
+Pwede rin mag-2 botts o kaya naman, um-FT (Hey)<br>
+I'm your plus one tonight, we don't have to keep this lowkey<br>
+<br>
+[Chorus]<br>
+Gusto ko lang naman maramdaman ang lambing mo (Ang lambing mo)<br>
+'Di kayang tapatan ng sino man ang yakap mo (Ang yakap mo)<br>
+Kaya halika na't sa 'kin tumabi (Yeah)<br>
+'Wag kang lalayo, please, 'wag din aalis (No, no)<br>
+Dito ka na lang magpalipas ng gabi (Hey)<br>
+I will be your peace kahit sandali (Yes, sir)<br>
+<br>
+[Verse 2]<br>
+Pwede pa-deliver, sabay-handa ng mesa (Hey)<br>
+Para dito lang sa bahay kung tinatamad ka (Huh)<br>
+We can watch "Vincenzo" or any K-Drama (Woo)<br>
+Marathon ng MCU, pwede, ikaw bahala (I love you 3,000)<br>
+Kahit s'an basta kasama kita (Woo)<br>
+'Yon lang ang mahalaga (What?)<br>
+Makapiling ka, yung kayakap ka, 'lang katumbas 'to na saya (Huh)<br>
+Lumulutang sa alapaap (Ayy)<br>
+Natupad aking pangarap (Woo)<br>
+Nakakita ng anghel, sabay pag-ibig lumaganap<br>
+<br>
+[Chorus]<br>
+Gusto ko lang naman maramdaman ang lambing mo (Ang lambing mo)<br>
+'Di kayang tapatan ng sino man ang yakap mo (Ang yakap mo)<br>
+Kaya halika na't sa 'kin tumabi (Yeah)<br>
+'Wag kang lalayo, please, 'wag din aalis (No, no)<br>
+Dito ka na lang magpalipas ng gabi (Hey)<br>
+I will be your peace kahit sandali (Yes, sir)
+								</p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://drive.google.com/file/d/10FKiXklQ-0ShdsNTDuY9b4KbDpfLCgBx/preview" frameborder="0"></iframe>
+							</div>
+<audio id="mySong">
+				<source src="https://drive.google.com/uc?export=download&id=1fX3scmpN2SZFHQXhSe6p1itMFgBKaB-7" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else {
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>

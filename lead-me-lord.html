@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title>Lyrically | Aiza Seguerra - Lead me Lord</title>
+								<link rel="icon" href="image/loco.jpg">
+							<link rel="stylesheet" href="styless.css">
+							<meta content='width=device-width,initial-scale=1' name='viewport'>
+				</head>
+				<body>
+								<div class="container">
+												<div class="navi-bar">
+																<p class="logo"><span>Lyrical</span>ly</p>
+								<input type="text" id="input" placeholder="Search a Song...">
+								<div class="search_bx2"></div>
+								<nav>
+												
+												<ul id="navlinks">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="Submit.html">Submit Lyrics</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+				</ul>
+				</nav>
+					<img src="image/menu.png" class="menu-icon" onclick="togglemenu()">
+</div>
+
+		<div class="container2">
+        <div class="iconDetails">
+            <img src="imageworship/leadmelord.jpg">
+        </div>  
+    <div class="music-info">
+    <h2>Lead me Lord</h2>
+    <p>Singer: Aiza Seguerra</p>
+    <p class="track">Track 7 - We Are All God’s Children </p>
+    </div>
+</div>							
+							
+				 	<div class="lyrics">
+				 	<p id="status">Click To Play Music</p>				 					
+					<img src="image/play.png" id="icon">
+					<div class="lyrics-box">
+									
+<p>Lead me Lord<br>
+Lead me by the hand<br>
+And help me face the rising sun<br>
+Comfort me through all the pain<br>
+That life may bring<br>
+There's no other hope<br>
+That I can lean upon<br>
+Lead me Lord<br>
+Lead me all my life<br>
+<br>
+Walk by me<br>
+Walk by me<br>
+Across the lonely roads that I may face<br>
+Take my arms and let your hand<br>
+Show me the way<br>
+Show the way to live inside your heart<br>
+All my days<br>
+All my life<br>
+<br>
+You are my light<br>
+You're the lamp upon my feet<br>
+All the time my Lord<br>
+I need you there<br>
+You are my light<br>
+I can not live alone<br>
+Let me stay by your guiding love<br>
+All through my life<br>
+Lead me Lord<br>
+<br>
+Lead me Lord<br>
+Even though at times<br>
+I'd rather go along my way<br>
+Help me take the right direction<br>
+Take your road<br>
+Lead me lord<br>
+And never leave my side<br>
+All my days<br>
+All my life<br>
+<br>
+You are my light<br>
+You're the lamp upon my feet<br>
+All the time my Lord<br>
+I need you there<br>
+You are my light<br>
+I can not live alone<br>
+Let me stay by your guiding love<br>
+All through my life<br>
+<br>
+You are my light<br>
+You're the lamp upon my feet<br>
+All the time my Lord<br>
+I need you there<br>
+You are my light<br>
+I can not live alone<br>
+Let me stay by your guiding love<br>
+All through my life<br>
+All through my days<br>
+Lead me Lord<br>
+All my life
+            </p>
+							</div>
+							</div>
+							<div class="video">
+			       <iframe src="https://www.youtube.com/embed/gklFfdUieQo?rel=0" frameborder="0"></iframe>
+							</div>
+							</div>
+<audio id="mySong">
+				<source src="https://docs.google.com/uc?export=download&id=1r9NnIWRnG2vUTA8zlJ2UCwuMBenM1Ip2" type="audio/mp3">
+</audio>
+									<script>
+											var mySong = document.getElementById("mySong");
+											var icon = document.getElementById("icon");
+											
+											icon.onclick= function () {
+											if (mySong.paused) {
+											mySong.play();
+											document.getElementById("status").innerHTML="Audio is Playing";
+											icon.src = "image/pause.png";
+											}else{
+											mySong.pause();
+											document.getElementById("status").innerHTML="Audio Pause";
+											icon.src = "image/play.png";
+											}
+											}
+											icon.addEventListener('click', onclick);
+										  	function audioEnded () {
+												document.getElementById("status").innerHTML="Audio End";
+												icon.src ="image/play.png"
+												}
+												mySong.onended = audioEnded;
+							</script>
+								<script>
+				var navlinks = document.getElementById("navlinks");
+				
+				navlinks.style.maxHeight = "0px";
+				
+				function togglemenu(){
+				if (navlinks.style.maxHeight == "0px") {
+				navlinks.style.maxHeight = "130px"
+				} else {
+				navlinks.style.maxHeight = "0px"
+				}
+				}
+								</script>
+								<script src="search.js"></script>
+				</body>
+				
+</html>
